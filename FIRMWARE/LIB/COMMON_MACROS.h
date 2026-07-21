@@ -12,6 +12,12 @@
 #define enable  1
 #define disable 0
 
+#define input  0
+#define output 1
+
+#define Null (void*)0x00 
+
+
 
 
 #endif

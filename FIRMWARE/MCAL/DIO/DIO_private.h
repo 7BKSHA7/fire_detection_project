@@ -1,24 +1,19 @@
 #ifndef _DIO_PRIVATE_H_
 #define _DIO_PRIVATE_H_
 
-#define DIO_portA 0 
-#define DIO_portB 1 
-#define DIO_portC 2 
-#define DIO_portD 3 
+#define Dio_groupA 0 
+#define Dio_groupB 1 
+#define Dio_groupC 2 
+#define Dio_groupD 3
 
-#define DIO_pin0 0 
-#define DIO_pin1 1 
-#define DIO_pin2 2 
-#define DIO_pin3 3 
-#define DIO_pin4 4 
-#define DIO_pin5 5 
-#define DIO_pin6 6 
-#define DIO_pin7 7 
+#define Dio_pin0 0 
+#define Dio_pin1 1 
+#define Dio_pin2 2 
+#define Dio_pin3 3 
+#define Dio_pin4 4 
+#define Dio_pin5 5 
+#define Dio_pin6 6 
+#define Dio_pin7 7 
 
-#define input  0
-#define output 1
-
-#define DIO_high 1 
-#define DIO_low 0
 
 #endif 

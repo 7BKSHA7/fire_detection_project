@@ -1,27 +1,18 @@
 #ifndef _DIO_INTERFACE_H_
 #define _DIO_INTERFACE_H_
 
-#include "../LIB/STD_TYPES.h"
+#include "../../LIB/STD_TYPES.h"
+#include "DIO_config.h"
+#include "DIO_private.h"
 
-/*
-void DIO_SetPinDirection(u8 Port, u8 Pin, u8 Direction);
-void DIO_SetPinValue(u8 Port, u8 Pin, u8 Value);
-u8   DIO_GetPinValue(u8 Port, u8 Pin);
 
-void DIO_SetPortDirection(u8 Port, u8 Direction);
-void DIO_SetPortValue(u8 Port, u8 Value);
-u8   DIO_GetPortValue(u8 Port);
+void DIO_set_pin_direction(u8 group_name , u8 pin_number , u8 direction);  
+void DIO_set_pin_value(u8 group_name , u8 pin_number , u8 value);  
+u8   DIO_get_pin_value(u8 group_name , u8 pin_number);   
 
-void DIO_TogglePin(u8 Port, u8 Pin);
-*/
-
-void DIO_set_pin_direction(u8 port , u8 pin , u8 direction);
-void DIO_set_pin_value(u8 port , u8 pin , u8 value);
-u8 DIO_get_pin_value(u8 port , u8 pin);
-
-void DIO_set_port_direction(u8 port , u8 direction);
-void DIO_set_port_value(u8 port , u8 value);
-u8 DIO_get_port_value(u8 port);
+void DIO_set_group_direction(u8 group_name , u8 direction);
+void DIO_set_group_value(u8 group_name , u8 value);
+u8   DIO_get_group_value(u8 group_name);
 
 
 #endif

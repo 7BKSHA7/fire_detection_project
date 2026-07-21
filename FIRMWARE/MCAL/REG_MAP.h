@@ -1,7 +1,7 @@
 #ifndef _ATMEGA32REGMAP_H_
 #define _ATMEGA32REGMAP_H_
 
-#include "STD_TYPES.h"
+#include "../LIB/STD_TYPES.h"
 
 /*
     please use the register in here by typing the name 
