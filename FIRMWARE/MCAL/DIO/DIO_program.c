@@ -131,7 +131,7 @@ u8 DIO_get_pin_value(u8 group_name , u8 pin_number) // to read the value directi
 
 void DIO_set_group_direction(u8 group_name , u8 direction)// to set the whole group_name at once by setting direction so 0xFF or 0xF0 anything
 {
-    if (group_name <= Dio_groupD && direction < 2)
+    if (group_name <= Dio_groupD)
     {
         switch(group_name) // to check on each group_name 
         {
@@ -155,7 +155,7 @@ void DIO_set_group_direction(u8 group_name , u8 direction)// to set the whole gr
 
 void DIO_set_group_value(u8 group_name , u8 value) // to set a whole group to be on or off and inbetween
 {
-    if (group_name <= Dio_groupD && value < 2)
+    if (group_name <= Dio_groupD)
     {
         switch(group_name) // to check on each group_name 
         {
