@@ -3,24 +3,25 @@
 static void (*timer0_OVFcallback)(void) = Null;
 static void (*timer0_CTCcallback)(void) = Null;
 
-void TIMER0_init(u8 Timer_mode)
+void TIMER0_init(timer0_config_t config)
 {
-    if (Timer_mode == Timer0_normalmode)
+    if (config.timer_mode == Timer0_normalmode)
     {
         // set normal mode in tccr0 and enable interput
         ClearBit(TCCR0 , Timer0_WGM00);
         ClearBit(TCCR0 , Timer0_WGM01);
+        TCNT0 = config.preload_value;
         // enable interput 
         SetBit(TIMSK, Timer0_TOIE0);
     }
-    else if (Timer_mode == Timer0_CTCmode)
+    else if (config.timer_mode == Timer0_CTCmode)
     {
         // set ctc mode in tccr0 and enable interput 
         ClearBit(TCCR0 , Timer0_WGM00);
         SetBit(TCCR0 , Timer0_WGM01);
+        OCR0 = config.compare_match_value;
         // enable interput
         SetBit(TIMSK, Timer0_OCIE0);
-
     }
 }
 void TIMER0_start(u8 clock_select_value)
@@ -35,6 +36,17 @@ void TIMER0_stop(void)
 {
     TCCR0 = (TCCR0 &~ clock_select_mask) | Timer0_Disable ;
 }
+
+void TIMER0_set_preload (u8 preload_value)
+{
+    TCNT0 = preload_value;
+}
+
+void TIMER0_set_compare_match (u8 compare_match_value)
+{
+    OCR0= compare_match_value;
+}
+
 
 void TIMER0_set_call_back_fucntion (u8 timer_interupt_type , void (*PF)(void))
 {

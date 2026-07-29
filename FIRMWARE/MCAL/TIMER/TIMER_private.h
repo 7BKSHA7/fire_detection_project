@@ -46,5 +46,12 @@
 #define Timer0_overflow_interput 0 
 #define Timer0_compare_match_interput 1
 
+typedef struct 
+{
+    u8 timer_mode;
+    u8 preload_value;
+    u8 compare_match_value;
+}timer0_config_t;
+
 
 #endif

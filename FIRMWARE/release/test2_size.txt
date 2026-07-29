@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-   2320	      0	      4	   2324	    914	C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\test2.elf
+   2348	      0	      4	   2352	    930	C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\test2.elf

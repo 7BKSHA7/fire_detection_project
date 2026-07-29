@@ -8,9 +8,12 @@
 #include "TIMER_config.h"
 #include "TIMER_private.h"
 
-void TIMER0_init(u8 Timer_mode);
+void TIMER0_init(timer0_config_t config);
 void TIMER0_start(u8 clock_select_value);
 void TIMER0_stop(void);
+void TIMER0_set_preload (u8 preload_value);
+void TIMER0_set_compare_match (u8 compare_match_value);
+
 
 void TIMER0_set_call_back_fucntion (u8 timer_interupt_type , void (*PF)(void));
 

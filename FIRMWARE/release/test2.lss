@@ -3,23 +3,23 @@ C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\test2.elf:    
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         00000910  00000000  00000000  00000094  2**1
+  0 .text         0000092c  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000000  00800060  00000910  000009a4  2**0
+  1 .data         00000000  00800060  0000092c  000009c0  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000004  00800060  00800060  000009a4  2**0
+  2 .bss          00000004  00800060  00800060  000009c0  2**0
                   ALLOC
-  3 .comment      0000002f  00000000  00000000  000009a4  2**0
+  3 .comment      0000002f  00000000  00000000  000009c0  2**0
                   CONTENTS, READONLY
-  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000009d4  2**2
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000009f0  2**2
                   CONTENTS, READONLY, OCTETS
-  5 .debug_info   000004e6  00000000  00000000  00000a10  2**0
+  5 .debug_info   000004e6  00000000  00000000  00000a2c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  6 .debug_abbrev 000004a3  00000000  00000000  00000ef6  2**0
+  6 .debug_abbrev 000004a3  00000000  00000000  00000f12  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  7 .debug_line   0000001d  00000000  00000000  00001399  2**0
+  7 .debug_line   0000001d  00000000  00000000  000013b5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  8 .debug_str    00000196  00000000  00000000  000013b6  2**0
+  8 .debug_str    00000196  00000000  00000000  000013d2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -35,8 +35,8 @@ Disassembly of section .text:
   1c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
   20:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
   24:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
-  28:	0c 94 33 04 	jmp	0x866	; 0x866 <__vector_10>
-  2c:	0c 94 5a 04 	jmp	0x8b4	; 0x8b4 <__vector_11>
+  28:	0c 94 41 04 	jmp	0x882	; 0x882 <__vector_10>
+  2c:	0c 94 68 04 	jmp	0x8d0	; 0x8d0 <__vector_11>
   30:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
   34:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
   38:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
@@ -80,8 +80,8 @@ Disassembly of section .text:
   6e:	e1 f7       	brne	.-8      	; 0x68 <.Loc.4>
 
 00000070 <L0^A>:
-  70:	0e 94 81 04 	call	0x902	; 0x902 <main>
-  74:	0c 94 86 04 	jmp	0x90c	; 0x90c <_exit>
+  70:	0e 94 8f 04 	call	0x91e	; 0x91e <main>
+  74:	0c 94 94 04 	jmp	0x928	; 0x928 <_exit>
 
 00000078 <__bad_interrupt>:
   78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
@@ -1230,163 +1230,185 @@ Disassembly of section .text:
  7f4:	80 b3       	in	r24, 0x10	; 16
  7f6:	08 95       	ret
 
-000007f8 <TIMER0_init>:
- 7f8:	81 30       	cpi	r24, 0x01	; 1
- 7fa:	50 f4       	brcc	.+20     	; 0x810 <.L2>
- 7fc:	83 b7       	in	r24, 0x33	; 51
- 7fe:	8f 7b       	andi	r24, 0xBF	; 191
- 800:	83 bf       	out	0x33, r24	; 51
- 802:	83 b7       	in	r24, 0x33	; 51
- 804:	87 7f       	andi	r24, 0xF7	; 247
- 806:	83 bf       	out	0x33, r24	; 51
- 808:	89 b7       	in	r24, 0x39	; 57
- 80a:	81 60       	ori	r24, 0x01	; 1
- 80c:	89 bf       	out	0x39, r24	; 57
- 80e:	08 95       	ret
+000007f8 <GIE_Enable>:
+ 7f8:	8f b7       	in	r24, 0x3f	; 63
+ 7fa:	80 68       	ori	r24, 0x80	; 128
+ 7fc:	8f bf       	out	0x3f, r24	; 63
+ 7fe:	08 95       	ret
 
-00000810 <.L2>:
- 810:	09 f0       	breq	.+2      	; 0x814 <.L5>
- 812:	08 95       	ret
+00000800 <GIE_Disable>:
+ 800:	8f b7       	in	r24, 0x3f	; 63
+ 802:	8f 77       	andi	r24, 0x7F	; 127
+ 804:	8f bf       	out	0x3f, r24	; 63
+ 806:	08 95       	ret
 
-00000814 <.L5>:
- 814:	83 b7       	in	r24, 0x33	; 51
- 816:	8f 7b       	andi	r24, 0xBF	; 191
- 818:	83 bf       	out	0x33, r24	; 51
- 81a:	83 b7       	in	r24, 0x33	; 51
- 81c:	88 60       	ori	r24, 0x08	; 8
- 81e:	83 bf       	out	0x33, r24	; 51
- 820:	89 b7       	in	r24, 0x39	; 57
- 822:	82 60       	ori	r24, 0x02	; 2
- 824:	89 bf       	out	0x39, r24	; 57
- 826:	08 95       	ret
+00000808 <TIMER0_init>:
+ 808:	61 30       	cpi	r22, 0x01	; 1
+ 80a:	58 f4       	brcc	.+22     	; 0x822 <.L2>
+ 80c:	83 b7       	in	r24, 0x33	; 51
+ 80e:	8f 7b       	andi	r24, 0xBF	; 191
+ 810:	83 bf       	out	0x33, r24	; 51
+ 812:	83 b7       	in	r24, 0x33	; 51
+ 814:	87 7f       	andi	r24, 0xF7	; 247
+ 816:	83 bf       	out	0x33, r24	; 51
+ 818:	72 bf       	out	0x32, r23	; 50
+ 81a:	89 b7       	in	r24, 0x39	; 57
+ 81c:	81 60       	ori	r24, 0x01	; 1
+ 81e:	89 bf       	out	0x39, r24	; 57
+ 820:	08 95       	ret
 
-00000828 <TIMER0_start>:
- 828:	81 15       	cp	r24, r1
- 82a:	21 f0       	breq	.+8      	; 0x834 <.L6>
+00000822 <.L2>:
+ 822:	09 f0       	breq	.+2      	; 0x826 <.L5>
+ 824:	08 95       	ret
+
+00000826 <.L5>:
+ 826:	93 b7       	in	r25, 0x33	; 51
+ 828:	9f 7b       	andi	r25, 0xBF	; 191
+ 82a:	93 bf       	out	0x33, r25	; 51
  82c:	93 b7       	in	r25, 0x33	; 51
- 82e:	98 7f       	andi	r25, 0xF8	; 248
- 830:	89 2b       	or	r24, r25
- 832:	83 bf       	out	0x33, r24	; 51
+ 82e:	98 60       	ori	r25, 0x08	; 8
+ 830:	93 bf       	out	0x33, r25	; 51
+ 832:	8c bf       	out	0x3c, r24	; 60
+ 834:	89 b7       	in	r24, 0x39	; 57
+ 836:	82 60       	ori	r24, 0x02	; 2
+ 838:	89 bf       	out	0x39, r24	; 57
+ 83a:	08 95       	ret
 
-00000834 <.L6>:
- 834:	08 95       	ret
+0000083c <TIMER0_start>:
+ 83c:	81 15       	cp	r24, r1
+ 83e:	21 f0       	breq	.+8      	; 0x848 <.L6>
+ 840:	93 b7       	in	r25, 0x33	; 51
+ 842:	98 7f       	andi	r25, 0xF8	; 248
+ 844:	89 2b       	or	r24, r25
+ 846:	83 bf       	out	0x33, r24	; 51
 
-00000836 <TIMER0_stop>:
- 836:	83 b7       	in	r24, 0x33	; 51
- 838:	88 7f       	andi	r24, 0xF8	; 248
- 83a:	83 bf       	out	0x33, r24	; 51
- 83c:	08 95       	ret
+00000848 <.L6>:
+ 848:	08 95       	ret
 
-0000083e <TIMER0_set_call_back_fucntion>:
- 83e:	81 30       	cpi	r24, 0x01	; 1
- 840:	40 f4       	brcc	.+16     	; 0x852 <.L13>
- 842:	61 15       	cp	r22, r1
- 844:	71 05       	cpc	r23, r1
- 846:	31 f0       	breq	.+12     	; 0x854 <.L12>
- 848:	60 93 62 00 	sts	0x0062, r22	; 0x800062 <timer0_OVFcallback>
- 84c:	70 93 63 00 	sts	0x0063, r23	; 0x800063 <timer0_OVFcallback+0x1>
+0000084a <TIMER0_stop>:
+ 84a:	83 b7       	in	r24, 0x33	; 51
+ 84c:	88 7f       	andi	r24, 0xF8	; 248
+ 84e:	83 bf       	out	0x33, r24	; 51
  850:	08 95       	ret
 
-00000852 <.L13>:
- 852:	09 f0       	breq	.+2      	; 0x856 <.L21>
-
-00000854 <.L12>:
+00000852 <TIMER0_set_preload>:
+ 852:	82 bf       	out	0x32, r24	; 50
  854:	08 95       	ret
 
-00000856 <.L21>:
- 856:	61 15       	cp	r22, r1
- 858:	71 05       	cpc	r23, r1
- 85a:	e1 f3       	breq	.-8      	; 0x854 <.L12>
- 85c:	60 93 60 00 	sts	0x0060, r22	; 0x800060 <timer0_CTCcallback>
- 860:	70 93 61 00 	sts	0x0061, r23	; 0x800061 <timer0_CTCcallback+0x1>
- 864:	08 95       	ret
+00000856 <TIMER0_set_compare_match>:
+ 856:	8c bf       	out	0x3c, r24	; 60
+ 858:	08 95       	ret
 
-00000866 <__vector_10>:
- 866:	1f 92       	push	r1
- 868:	0f 92       	push	r0
- 86a:	0f b6       	in	r0, 0x3f	; 63
- 86c:	0f 92       	push	r0
- 86e:	11 24       	eor	r1, r1
- 870:	2f 93       	push	r18
- 872:	3f 93       	push	r19
- 874:	4f 93       	push	r20
- 876:	5f 93       	push	r21
- 878:	6f 93       	push	r22
- 87a:	7f 93       	push	r23
- 87c:	8f 93       	push	r24
- 87e:	9f 93       	push	r25
- 880:	af 93       	push	r26
- 882:	bf 93       	push	r27
- 884:	ef 93       	push	r30
- 886:	ff 93       	push	r31
- 888:	e0 91 60 00 	lds	r30, 0x0060	; 0x800060 <timer0_CTCcallback>
- 88c:	f0 91 61 00 	lds	r31, 0x0061	; 0x800061 <timer0_CTCcallback+0x1>
- 890:	09 95       	icall
- 892:	ff 91       	pop	r31
- 894:	ef 91       	pop	r30
- 896:	bf 91       	pop	r27
- 898:	af 91       	pop	r26
- 89a:	9f 91       	pop	r25
- 89c:	8f 91       	pop	r24
- 89e:	7f 91       	pop	r23
- 8a0:	6f 91       	pop	r22
- 8a2:	5f 91       	pop	r21
- 8a4:	4f 91       	pop	r20
- 8a6:	3f 91       	pop	r19
- 8a8:	2f 91       	pop	r18
- 8aa:	0f 90       	pop	r0
- 8ac:	0f be       	out	0x3f, r0	; 63
- 8ae:	0f 90       	pop	r0
- 8b0:	1f 90       	pop	r1
- 8b2:	18 95       	reti
+0000085a <TIMER0_set_call_back_fucntion>:
+ 85a:	81 30       	cpi	r24, 0x01	; 1
+ 85c:	40 f4       	brcc	.+16     	; 0x86e <.L15>
+ 85e:	61 15       	cp	r22, r1
+ 860:	71 05       	cpc	r23, r1
+ 862:	31 f0       	breq	.+12     	; 0x870 <.L14>
+ 864:	60 93 62 00 	sts	0x0062, r22	; 0x800062 <timer0_OVFcallback>
+ 868:	70 93 63 00 	sts	0x0063, r23	; 0x800063 <timer0_OVFcallback+0x1>
+ 86c:	08 95       	ret
 
-000008b4 <__vector_11>:
- 8b4:	1f 92       	push	r1
- 8b6:	0f 92       	push	r0
- 8b8:	0f b6       	in	r0, 0x3f	; 63
- 8ba:	0f 92       	push	r0
- 8bc:	11 24       	eor	r1, r1
- 8be:	2f 93       	push	r18
- 8c0:	3f 93       	push	r19
- 8c2:	4f 93       	push	r20
- 8c4:	5f 93       	push	r21
- 8c6:	6f 93       	push	r22
- 8c8:	7f 93       	push	r23
- 8ca:	8f 93       	push	r24
- 8cc:	9f 93       	push	r25
- 8ce:	af 93       	push	r26
- 8d0:	bf 93       	push	r27
- 8d2:	ef 93       	push	r30
- 8d4:	ff 93       	push	r31
- 8d6:	e0 91 62 00 	lds	r30, 0x0062	; 0x800062 <timer0_OVFcallback>
- 8da:	f0 91 63 00 	lds	r31, 0x0063	; 0x800063 <timer0_OVFcallback+0x1>
- 8de:	09 95       	icall
- 8e0:	ff 91       	pop	r31
- 8e2:	ef 91       	pop	r30
- 8e4:	bf 91       	pop	r27
- 8e6:	af 91       	pop	r26
- 8e8:	9f 91       	pop	r25
- 8ea:	8f 91       	pop	r24
- 8ec:	7f 91       	pop	r23
- 8ee:	6f 91       	pop	r22
- 8f0:	5f 91       	pop	r21
- 8f2:	4f 91       	pop	r20
- 8f4:	3f 91       	pop	r19
- 8f6:	2f 91       	pop	r18
- 8f8:	0f 90       	pop	r0
- 8fa:	0f be       	out	0x3f, r0	; 63
- 8fc:	0f 90       	pop	r0
- 8fe:	1f 90       	pop	r1
- 900:	18 95       	reti
+0000086e <.L15>:
+ 86e:	09 f0       	breq	.+2      	; 0x872 <.L23>
 
-00000902 <main>:
- 902:	41 e0       	ldi	r20, 0x01	; 1
- 904:	60 e0       	ldi	r22, 0x00	; 0
- 906:	80 e0       	ldi	r24, 0x00	; 0
- 908:	0c 94 24 03 	jmp	0x648	; 0x648 <DIO_set_pin_direction>
+00000870 <.L14>:
+ 870:	08 95       	ret
 
-0000090c <_exit>:
- 90c:	f8 94       	cli
+00000872 <.L23>:
+ 872:	61 15       	cp	r22, r1
+ 874:	71 05       	cpc	r23, r1
+ 876:	e1 f3       	breq	.-8      	; 0x870 <.L14>
+ 878:	60 93 60 00 	sts	0x0060, r22	; 0x800060 <timer0_CTCcallback>
+ 87c:	70 93 61 00 	sts	0x0061, r23	; 0x800061 <timer0_CTCcallback+0x1>
+ 880:	08 95       	ret
 
-0000090e <__stop_program>:
- 90e:	ff cf       	rjmp	.-2      	; 0x90e <__stop_program>
+00000882 <__vector_10>:
+ 882:	1f 92       	push	r1
+ 884:	0f 92       	push	r0
+ 886:	0f b6       	in	r0, 0x3f	; 63
+ 888:	0f 92       	push	r0
+ 88a:	11 24       	eor	r1, r1
+ 88c:	2f 93       	push	r18
+ 88e:	3f 93       	push	r19
+ 890:	4f 93       	push	r20
+ 892:	5f 93       	push	r21
+ 894:	6f 93       	push	r22
+ 896:	7f 93       	push	r23
+ 898:	8f 93       	push	r24
+ 89a:	9f 93       	push	r25
+ 89c:	af 93       	push	r26
+ 89e:	bf 93       	push	r27
+ 8a0:	ef 93       	push	r30
+ 8a2:	ff 93       	push	r31
+ 8a4:	e0 91 60 00 	lds	r30, 0x0060	; 0x800060 <timer0_CTCcallback>
+ 8a8:	f0 91 61 00 	lds	r31, 0x0061	; 0x800061 <timer0_CTCcallback+0x1>
+ 8ac:	09 95       	icall
+ 8ae:	ff 91       	pop	r31
+ 8b0:	ef 91       	pop	r30
+ 8b2:	bf 91       	pop	r27
+ 8b4:	af 91       	pop	r26
+ 8b6:	9f 91       	pop	r25
+ 8b8:	8f 91       	pop	r24
+ 8ba:	7f 91       	pop	r23
+ 8bc:	6f 91       	pop	r22
+ 8be:	5f 91       	pop	r21
+ 8c0:	4f 91       	pop	r20
+ 8c2:	3f 91       	pop	r19
+ 8c4:	2f 91       	pop	r18
+ 8c6:	0f 90       	pop	r0
+ 8c8:	0f be       	out	0x3f, r0	; 63
+ 8ca:	0f 90       	pop	r0
+ 8cc:	1f 90       	pop	r1
+ 8ce:	18 95       	reti
+
+000008d0 <__vector_11>:
+ 8d0:	1f 92       	push	r1
+ 8d2:	0f 92       	push	r0
+ 8d4:	0f b6       	in	r0, 0x3f	; 63
+ 8d6:	0f 92       	push	r0
+ 8d8:	11 24       	eor	r1, r1
+ 8da:	2f 93       	push	r18
+ 8dc:	3f 93       	push	r19
+ 8de:	4f 93       	push	r20
+ 8e0:	5f 93       	push	r21
+ 8e2:	6f 93       	push	r22
+ 8e4:	7f 93       	push	r23
+ 8e6:	8f 93       	push	r24
+ 8e8:	9f 93       	push	r25
+ 8ea:	af 93       	push	r26
+ 8ec:	bf 93       	push	r27
+ 8ee:	ef 93       	push	r30
+ 8f0:	ff 93       	push	r31
+ 8f2:	e0 91 62 00 	lds	r30, 0x0062	; 0x800062 <timer0_OVFcallback>
+ 8f6:	f0 91 63 00 	lds	r31, 0x0063	; 0x800063 <timer0_OVFcallback+0x1>
+ 8fa:	09 95       	icall
+ 8fc:	ff 91       	pop	r31
+ 8fe:	ef 91       	pop	r30
+ 900:	bf 91       	pop	r27
+ 902:	af 91       	pop	r26
+ 904:	9f 91       	pop	r25
+ 906:	8f 91       	pop	r24
+ 908:	7f 91       	pop	r23
+ 90a:	6f 91       	pop	r22
+ 90c:	5f 91       	pop	r21
+ 90e:	4f 91       	pop	r20
+ 910:	3f 91       	pop	r19
+ 912:	2f 91       	pop	r18
+ 914:	0f 90       	pop	r0
+ 916:	0f be       	out	0x3f, r0	; 63
+ 918:	0f 90       	pop	r0
+ 91a:	1f 90       	pop	r1
+ 91c:	18 95       	reti
+
+0000091e <main>:
+ 91e:	41 e0       	ldi	r20, 0x01	; 1
+ 920:	60 e0       	ldi	r22, 0x00	; 0
+ 922:	80 e0       	ldi	r24, 0x00	; 0
+ 924:	0c 94 24 03 	jmp	0x648	; 0x648 <DIO_set_pin_direction>
+
+00000928 <_exit>:
+ 928:	f8 94       	cli
+
+0000092a <__stop_program>:
+ 92a:	ff cf       	rjmp	.-2      	; 0x92a <__stop_program>
