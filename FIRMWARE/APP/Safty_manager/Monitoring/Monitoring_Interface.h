@@ -9,9 +9,16 @@
 * @copyright Copyright (c) 2026, Gestell Company
 */
 
-#ifndef MONITORING_INTERFACE_H
-#define MONITORING_INTERFACE_H
+#ifndef _MONITORING_INTERFACE_H_
+#define _MONITORING_INTERFACE_H_
 
+#include "Monitoring_Config.h"
+#include "Monitoring_Private.h"
+
+#include "../../../HAL/LM35/LM35_interface.h"
+#include "../../../HAL/MQ2/MQ2_interface.h"
+
+void MONITORING_update();
 
 
 #endif /* MONITORING_INTERFACE_H */

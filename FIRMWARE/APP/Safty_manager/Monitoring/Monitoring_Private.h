@@ -9,8 +9,8 @@
 * @copyright Copyright (c) 2026, Gestell Company
 */
 
-#ifndef MONITORING_PRIVATE_H
-#define MONITORING_PRIVATE_H
+#ifndef _MONITORING_PRIVATE_H_
+#define _MONITORING_PRIVATE_H_
 
 
 

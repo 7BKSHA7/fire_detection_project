@@ -12,6 +12,9 @@
 #ifndef RECOVERY_INTERFACE_H
 #define RECOVERY_INTERFACE_H
 
+#include "Recovery_Config.h"
+#include "Recovery_Private.h"
 
+void RECOVERY_update();
 
 #endif /* RECOVERY_INTERFACE_H */

@@ -2,6 +2,8 @@
 #define _LCD_INTERFACE_H_
 
 #include "../../LIB/STD_TYPES.h"
+#include "LCD_config.h"
+#include "LCD_private.h"
 
 void LCD_INIT        (u8 ModeType);
 void LCD_WriteCommand(u8 command , u8 ModeType);

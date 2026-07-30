@@ -9,8 +9,8 @@
 * @copyright Copyright (c) 2026, Gestell Company
 */
 
-#ifndef SYSTEM_CONFIG_H
-#define SYSTEM_CONFIG_H
+#ifndef _SYSTEM_CONFIG_H_
+#define _SYSTEM_CONFIG_H_
 
 
 

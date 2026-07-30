@@ -9,3 +9,10 @@
 * @copyright Copyright (c) 2026, Gestell Company
 */
 
+#include "EventLogger_Interface.h"
+#include "../System/System_Interface.h"
+// must be done win uart is done 
+void EVENTLOGGER_update()
+{
+
+}

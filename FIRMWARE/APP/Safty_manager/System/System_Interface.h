@@ -1,7 +1,7 @@
 /**
 * @file    System_Interface.h
-* @author (developer)  
-* @author (reviewer)
+* @author beshoy  
+* @author beshoy
 * @brief  
 * @details
 * @version
@@ -9,9 +9,23 @@
 * @copyright Copyright (c) 2026, Gestell Company
 */
 
-#ifndef SYSTEM_INTERFACE_H
-#define SYSTEM_INTERFACE_H
+#ifndef _SYSTEM_INTERFACE_H_
+#define _SYSTEM_INTERFACE_H_
 
+#include "../../../LIB/STD_TYPES.h"
+#include "../../../LIB/BIT_MATH.h"
+#include "../../../LIB/COMMON_MACROS.h"
+#include "System_Config.h"
+#include "System_Private.h"
 
+#include "../../../HAL/BUTTON/BUTTON_interface.h"
+#include "../../../HAL/LED/LED_interface.h"
+#include "../../../HAL/LCD/LCD_interface.h"
+#include "../../../HAL/LM35/LM35_interface.h"
+#include "../../../HAL/MQ2/MQ2_interface.h"
+#include "../../../HAL/BUZZER/BUZZER_interface.h"
+
+void SYSTEM_init ();
+void SYSTEM_update();
 
 #endif /* SYSTEM_INTERFACE_H */
