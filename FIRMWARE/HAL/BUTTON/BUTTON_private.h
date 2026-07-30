@@ -12,6 +12,7 @@
 #ifndef BUTTON_PRIVATE_H
 #define BUTTON_PRIVATE_H
 
-
+#define BUTTON_PRESSED   1
+#define BUTTON_RELEASED  0
 
 #endif /* BUTTON_PRIVATE_H */

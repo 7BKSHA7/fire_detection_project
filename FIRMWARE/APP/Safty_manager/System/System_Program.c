@@ -12,7 +12,7 @@
 #include "System_Interface.h"
 #include "../Monitoring/Monitoring_Interface.h"
 #include "../EventLogger/EventLogger_Interface.h"
-#include <util/dealy.h>
+#include <util/delay.h>
 
 // intilazit the system to start all HAL drivers in the program so everything starts working
 void SYSTEM_init ()
@@ -22,7 +22,7 @@ void SYSTEM_init ()
     MQ2_init(); // start the smoke dectector
     LM35_init(); // start the flame detetor
     BUTTON_init(); // start the button to read inputs
-    BUZZUR_init(); // start the buzzer to alarm the user
+    BUZZER_init(); // start the buzzer to alarm the user
     config.temprature  = 0 ;
     config.acknowledged = NOT_ACK;
     config.smoke = 0;

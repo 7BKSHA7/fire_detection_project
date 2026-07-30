@@ -12,6 +12,7 @@
 #ifndef BUZZER_PRIVATE_H
 #define BUZZER_PRIVATE_H
 
-
+#define BUZZER_STATE_OFF  0
+#define BUZZER_STATE_ON   1
 
 #endif /* BUZZER_PRIVATE_H */
