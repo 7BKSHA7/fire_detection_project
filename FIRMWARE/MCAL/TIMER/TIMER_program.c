@@ -1,3 +1,14 @@
+/**
+* @file    TIMER_Program.c
+* @author  beshoy  
+* @author  beshoy
+* @brief  implentation of timer driver
+* @details  contains all function implementations and init
+* @version  1.0
+* @date 29/7/2026
+* @copyright Copyright (c) 2026, Gestell Company
+*/
+
 #include "TIMER_interface.h"
 
 static void (*timer0_OVFcallback)(void) = Null;
