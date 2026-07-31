@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   3568	     44	     10	   3622	    e26	C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\release\testing123.elf

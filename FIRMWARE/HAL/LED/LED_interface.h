@@ -2,7 +2,8 @@
 #define _LED_INTERFACE_H_
 
 #include "../../LIB/STD_TYPES.h"
-
+#include "LED_private.h"
+#include "LED_config.h"
 void LED_initialization();
 void LED_SetStatus(u8 led_state);
 

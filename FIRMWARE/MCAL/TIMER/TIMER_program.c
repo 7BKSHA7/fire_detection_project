@@ -14,9 +14,9 @@
 static void (*timer0_OVFcallback)(void) = Null;
 static void (*timer0_CTCcallback)(void) = Null;
 
-void TIMER0_init(timer0_config_t config)
+void TIMER0_init(timer0_config_t config) // timer config 
 {
-    if (config.timer_mode == Timer0_normalmode)
+    if (config.timer_mode == Timer0_normalmode) // to make it normal mode 
     {
         // set normal mode in tccr0 and enable interput
         ClearBit(TCCR0 , Timer0_WGM00);
@@ -25,7 +25,7 @@ void TIMER0_init(timer0_config_t config)
         // enable interput 
         SetBit(TIMSK, Timer0_TOIE0);
     }
-    else if (config.timer_mode == Timer0_CTCmode)
+    else if (config.timer_mode == Timer0_CTCmode) // to make it compare mode
     {
         // set ctc mode in tccr0 and enable interput 
         ClearBit(TCCR0 , Timer0_WGM00);
@@ -35,7 +35,7 @@ void TIMER0_init(timer0_config_t config)
         SetBit(TIMSK, Timer0_OCIE0);
     }
 }
-void TIMER0_start(u8 clock_select_value)
+void TIMER0_start(u8 clock_select_value) // start and select prescaller
 {
     // select prescaller
     if (clock_select_value != Timer0_Disable)
@@ -48,12 +48,12 @@ void TIMER0_stop(void)
     TCCR0 = (TCCR0 &~ clock_select_mask) | Timer0_Disable ;
 }
 
-void TIMER0_set_preload (u8 preload_value)
+void TIMER0_set_preload (u8 preload_value) // set the value to start from
 {
     TCNT0 = preload_value;
 }
 
-void TIMER0_set_compare_match (u8 compare_match_value)
+void TIMER0_set_compare_match (u8 compare_match_value) // set the value to compare to
 {
     OCR0= compare_match_value;
 }

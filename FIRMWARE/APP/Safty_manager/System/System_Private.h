@@ -22,21 +22,6 @@
 #define ACK      1
 #define NOT_ACK  0
 
-typedef struct
-{
-    // sensor values 
-    u8 temprature ;
-    u8 smoke ;
 
-    // ACK acknowledged
-    u8 acknowledged ;
-
-    // state
-    u8 current_state;
-    u8 prev_state;
-
-}system_manager_t;
-
-extern system_manager_t config;
 
 #endif /* SYSTEM_PRIVATE_H */

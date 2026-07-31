@@ -23,11 +23,13 @@ void SYSTEM_init ()
     LM35_init(); // start the flame detetor
     BUTTON_init(); // start the button to read inputs
     BUZZER_init(); // start the buzzer to alarm the user
-    config.temprature  = 0 ;
-    config.acknowledged = NOT_ACK;
-    config.smoke = 0;
-    config.current_state = NORMAL;
-    config.prev_state = NORMAL;
+
+    // config_system_values.temprature  = 0 ;
+    // config_system_values.acknowledged = NOT_ACK;
+    // config_system_values.smoke = 0;
+    // config_system_values.current_state = NORMAL;
+    // config_system_values.prev_state = NORMAL;
+    
     LCD_WriteString("SYS:init done" , Lcd_4bitMode);
     _delay_ms(2000);
     LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
@@ -36,7 +38,6 @@ void SYSTEM_init ()
 void SYSTEM_update()
 {
     // start to mointer
-    MONITORING_update();
     // chnage state 
     // fire state
     // log 

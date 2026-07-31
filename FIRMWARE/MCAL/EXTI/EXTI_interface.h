@@ -1,13 +1,12 @@
 #ifndef _EXTI_INTERFACE_H_
 #define _EXTI_INTERFACE_H_
 
-#include <stdint.h>
-#include "../../LIB/BIT.MATH.h"
+#include "../../LIB/BIT_MATH.h"
 #include "../../LIB/COMMON_MACROS.h"
 #include "../../LIB/STD_TYPES.h"
 #include "../REG_MAP.h"
-#include "EXTI_Private.h"
-#include "EXTI_Config.h"
+#include "EXTI_private.h"
+#include "EXTI_config.h"
 
 /*  
  * @fn       EXTI_Init
@@ -18,9 +17,9 @@
  * @param SensConfig 
  */
 
-void EXTI_Init(uint8_t InterruptName,uint8_t SensConfig);
-void EXTI_Enable(uint8_t InterruptName);
-void EXTI_Disable(uint8_t InterruptName);
+void EXTI_Init(u8 InterruptName,u8 SensConfig);
+void EXTI_Enable(u8 InterruptName);
+void EXTI_Disable(u8 InterruptName);
 
 
 

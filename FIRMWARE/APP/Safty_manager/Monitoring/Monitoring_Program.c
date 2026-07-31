@@ -10,11 +10,70 @@
 */
 
 #include "Monitoring_Interface.h"
-#include "../System/System_Interface.h"
+
+timer0_config_t config_timer =
+{
+    .timer_mode = Timer0_normalmode,
+    .preload_value = timer_preload_value,
+};
+
+static u8 temperature = 0 ;
+static u8 smoke = 0;
+
+void MONITROING_init()
+{
+    GIE_Enable();
+    TIMER0_init(config_timer);
+    TIMER0_start(Timer0_Prescaler8);
+
+    LCD_WriteString("temp  : " , Lcd_4bitMode);
+    LCD_GoToXY(Lcd_line1 , Lcd_column0 , Lcd_4bitMode);
+    LCD_WriteString("smoke : " , Lcd_4bitMode);
+
+}
 
 
 void MONITORING_update() // mointer the numbers of temp and smoke
 {
-    config.temprature = LM35_read_temp();
-    config.smoke = MQ2_read_smoke();
+    static u32 count = 0 ;
+    count ++ ;
+
+    if ((count % 2) == 0) // 100 / 50 
+    {
+        temperature = LM35_get_temperature();
+        smoke = MQ2_read_smoke();
+    }
+    if ((count % 5) == 0)  // 250 / 50
+    {
+        LCD_GoToXY(Lcd_line0 , Lcd_column8 , Lcd_4bitMode);
+        LCD_WriteString("        " , Lcd_4bitMode);
+        LCD_GoToXY(Lcd_line0 , Lcd_column8 , Lcd_4bitMode);
+        LCD_WriteNUMBER(temperature , Lcd_4bitMode);
+
+        LCD_GoToXY(Lcd_line1 , Lcd_column8 , Lcd_4bitMode);
+        LCD_WriteString("        " , Lcd_4bitMode);
+        LCD_GoToXY(Lcd_line1 , Lcd_column8 , Lcd_4bitMode);
+        LCD_WriteNUMBER(smoke , Lcd_4bitMode);
+
+        LCD_WriteString("        " , Lcd_4bitMode);
+
+    }
+    if ((count % 20) == 0) // 1 sec
+    {
+        // uart update
+        TIMER0_set_preload(timer_preload_value);
+        count = 0 ;       
+    }
+}
+
+u8 MONITORING_get_values(u8 type)
+{
+    if (type == temp_values)
+    {
+        return temperature;
+    }
+    else if (type == smoke_values)
+    {
+        return smoke;
+    }
 }

@@ -46,6 +46,17 @@
 #define Timer0_overflow_interput 0 
 #define Timer0_compare_match_interput 1
 
+/*
+    caluation for 50 ms 
+    timer 8bit  / sys frequency = 8mhz  / prescaller 8 
+    clc time --> 8/8M = 1uS
+    overflow 1u * 256 = 256uS
+    req > overflowtime
+    no of of count --> 195.3125
+    preload --> 176
+*/
+
+
 typedef struct 
 {
     u8 timer_mode;

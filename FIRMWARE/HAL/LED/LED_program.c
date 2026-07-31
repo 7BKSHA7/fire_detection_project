@@ -5,9 +5,7 @@
 
 #include <util/delay.h>
 
-#include "LED_config.h"
 #include "LED_interface.h"
-#include "LED_private.h"
 
 #include "../../MCAL/DIO/DIO_interface.h"
 

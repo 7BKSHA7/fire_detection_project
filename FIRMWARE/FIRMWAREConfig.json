@@ -1,8 +1,8 @@
 {
   "projectName": "FIRMWARE",
-  "projectPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7\\FIRMWARE",
-  "outputPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7\\FIRMWARE",
-  "outputName": "test2",
+  "projectPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7 - beshoy side\\FIRMWARE",
+  "outputPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7 - beshoy side\\FIRMWARE",
+  "outputName": "testing123",
   "target": "AVR",
   "mcu": "atmega32",
   "language": "C",
@@ -25,6 +25,6 @@
   "port": "COM5 - Standard Serial over Bluetooth link (COM5)",
   "baudRate": "115200",
   "timeout": "5000",
-  "firmwareFile": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7\\FIRMWARE/test2.hex",
+  "firmwareFile": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7 - beshoy side\\FIRMWARE/testing123.hex",
   "programmer": "usbasp"
 }

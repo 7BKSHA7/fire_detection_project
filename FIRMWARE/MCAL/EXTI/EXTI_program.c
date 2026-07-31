@@ -1,10 +1,6 @@
-#include "../../LIB/STD_TYPES.h"
-#include "../../LIB/BIT_MATH.h"
-#include "../../LIB/COMMON_MACROS.h"
-#include "../REG_MAP.h"
-#include "EXTI_Interface.h"
+#include "EXTI_interface.h"
 
-void EXTI_Init(uint8_t InterruptName,uint8_t SensConfig)
+void EXTI_Init(u8 InterruptName,u8 SensConfig)
 {
     if(InterruptName==Exti_Interrupt0)
     {
@@ -65,7 +61,7 @@ void EXTI_Init(uint8_t InterruptName,uint8_t SensConfig)
     }
 }
 
-void EXTI_Enable(uint8_t InterruptName)
+void EXTI_Enable(u8 InterruptName)
 {
     if(InterruptName==Exti_Interrupt0)
     {
@@ -82,7 +78,7 @@ void EXTI_Enable(uint8_t InterruptName)
 }
 
 
-void EXTI_Disable(uint8_t InterruptName)
+void EXTI_Disable(u8 InterruptName)
 {
     if(InterruptName==Exti_Interrupt0)
     {

@@ -14,10 +14,15 @@
 
 #include "Monitoring_Config.h"
 #include "Monitoring_Private.h"
+#include "../System/System_Interface.h"
 
 #include "../../../HAL/LM35/LM35_interface.h"
 #include "../../../HAL/MQ2/MQ2_interface.h"
+#include "../../../MCAL/TIMER/TIMER_interface.h"
+#include "../../../MCAL/GIE/GIE_Interface.h"
 
+
+void MONITROING_init();
 void MONITORING_update();
 
 
