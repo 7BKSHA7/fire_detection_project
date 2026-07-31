@@ -12,10 +12,9 @@
 #ifndef MQ2_INTERFACE_H
 #define MQ2_INTERFACE_H
 
-#include "MQ2_config.h"
-#include "MQ2_private.h"
+#include "../../LIB/STD_TYPES.h"
 
 void MQ2_init();
-u8 MQ2_read_smoke();
+u16 MQ2_read_smoke();
 
 #endif /* MQ2_INTERFACE_H */
