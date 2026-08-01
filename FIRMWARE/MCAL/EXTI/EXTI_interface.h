@@ -22,6 +22,7 @@ void EXTI_Enable(u8 InterruptName);
 void EXTI_Disable(u8 InterruptName);
 
 
+void EXTI_set_call_back(void (*PF)(void));
 
 
 #endif 

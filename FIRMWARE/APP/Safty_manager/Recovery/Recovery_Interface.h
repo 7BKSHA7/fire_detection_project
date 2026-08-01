@@ -15,6 +15,13 @@
 #include "Recovery_Config.h"
 #include "Recovery_Private.h"
 
-void RECOVERY_update();
+#include "../System/System_Interface.h"
+#include "../Monitoring/Monitoring_Interface.h"
+#include "../../../MCAL/EXTI/EXTI_interface.h"
+
+void RECOVERY_init();
+u8 RECOVERY_update();
+void RECOVERY_button_pressed();
+
 
 #endif /* RECOVERY_INTERFACE_H */

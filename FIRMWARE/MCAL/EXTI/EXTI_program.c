@@ -1,4 +1,5 @@
 #include "EXTI_interface.h"
+static void (*INT0_call_back)(void) =Null;
 
 void EXTI_Init(u8 InterruptName,u8 SensConfig)
 {
@@ -91,5 +92,22 @@ void EXTI_Disable(u8 InterruptName)
     else if(InterruptName==Exti_Interrupt2)
     {
         ClearBit(GICR , Exti_INT2);
+    }
+}
+
+void EXTI_set_call_back (void (*PF)(void))
+{
+    if ( PF != Null)
+    {
+        INT0_call_back = PF;
+    }
+}
+
+void __vector_1(void)  __attribute__((signal,used));
+void __vector_1(void)
+{
+    if (INT0_call_back != Null)
+    {
+        INT0_call_back();
     }
 }

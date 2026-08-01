@@ -1,6 +1,6 @@
 #ifndef _UART_PRIVATE_H
 #define _UART_PRIVATE_H
-#include <stdint.h>
+#include "../../LIB/STD_TYPES.h"
 
 
 // UCSRA

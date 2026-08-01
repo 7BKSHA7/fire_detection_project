@@ -1,7 +1,13 @@
 #ifndef _UART_INTERFACE_H_
 #define _UART_INTERFACE_H_
 
-#include "../../STD_TYPES.h"
+#include "../../LIB/COMMON_MACROS.h"
+#include "../../LIB/BIT_MATH.h"
+#include "../../LIB/STD_TYPES.h"
+#include "../REG_MAP.h"
+#include "UART_config.h"
+#include "UART_private.h"
+
 
 /*
     1- Mode Select -> Asynch / Synch 

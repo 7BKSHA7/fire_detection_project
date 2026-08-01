@@ -1,0 +1,852 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                              C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o (__umulhisi3)
+C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                              C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o (__udivmodsi4)
+C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                              C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o (exit)
+C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                              C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o (__do_copy_data)
+C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                              C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o (__do_clear_bss)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00008000         xr
+data             0x00800060         0x00000800         rw!x
+eeprom           0x00810000         0x00000400         rw!x
+fuse             0x00820000         0x00000002         rw!x
+lock             0x00830000         0x00000400         rw!x
+signature        0x00840000         0x00000400         rw!x
+user_signatures  0x00850000         0x00000400         rw!x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+LOAD C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+START GROUP
+LOAD C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a
+LOAD C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5\libm.a
+LOAD C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5\libc.a
+LOAD C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5\libatmega32.a
+END GROUP
+                [0x00000000]                      __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00008000]                      __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00800060]                      __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x00000800]                      __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000400]                      __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000002]                      __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                        __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                        __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                        __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xe00
+ *(.vectors)
+ .vectors       0x00000000       0x54 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000054                        . = ALIGN (0x2)
+                0x00000054                        __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                        __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+                0x00000054                        . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                        __ctors_start = .
+ *(.ctors)
+                0x00000054                        __ctors_end = .
+                0x00000054                        __dtors_start = .
+ *(.dtors)
+                0x00000054                        __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+ .text          0x00000092        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+ .text          0x00000092        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+ .text          0x00000092        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+ .text          0x00000092       0x18 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+                0x00000092                main
+ .text          0x000000aa        0x2 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+                0x000000aa                EVENTLOGGER_update
+ .text          0x000000ac       0xf2 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+                0x000000ac                MONITROING_init
+                0x000000c8                MONITORING_update
+ .text          0x0000019e        0x2 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+                0x0000019e                RECOVERY_update
+ .text          0x000001a0       0x50 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+                0x000001a0                SYSTEM_init
+                0x000001ee                SYSTEM_update
+ .text          0x000001f0       0x2a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+                0x000001f0                BUTTON_init
+                0x00000206                BUTTON_GetState
+ .text          0x0000021a       0x46 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+                0x0000021a                BUZZER_init
+                0x00000230                BUZZER_On
+                0x0000023c                BUZZER_Off
+                0x00000248                BUZZER_Toggle
+ .text          0x00000260      0x404 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+                0x00000260                LCD_WriteData
+                0x0000035e                LCD_WriteCommand
+                0x0000045c                LCD_INIT
+                0x0000057a                LCD_WriteString
+                0x000005ba                LCD_GoToXY
+                0x000005d4                LCD_WriteNUMBER
+ .text          0x00000664       0xe0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+                0x00000664                LED_initialization
+                0x00000684                LED_SetStatus
+ .text          0x00000744       0x54 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+                0x00000744                LM35_init
+                0x0000075c                LM35_get_temperature
+ .text          0x00000798       0x4a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+                0x00000798                MQ2_init
+                0x000007b0                MQ2_read_smoke
+ .text          0x000007e2       0xa0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+                0x000007e2                ADC_Enable
+                0x000007ea                ADC_Disable
+                0x000007f2                ADC_Adjust
+                0x0000080a                ADC_Channel
+                0x00000814                ADC_StartConversion
+                0x00000820                ADC_Prescaler
+                0x0000082a                ADC_Init
+                0x0000086c                ADC_ReadResult
+ .text          0x00000882      0x2e8 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+                0x00000882                DIO_set_pin_direction
+                0x0000097e                DIO_set_pin_value
+                0x00000a7a                DIO_get_pin_value
+                0x00000aea                DIO_set_group_direction
+                0x00000b12                DIO_set_group_value
+                0x00000b3a                DIO_get_group_value
+ .text          0x00000b6a      0x106 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+                0x00000b6a                EXTI_Init
+                0x00000c24                EXTI_Enable
+                0x00000c4a                EXTI_Disable
+ .text          0x00000c70       0x10 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+                0x00000c70                GIE_Enable
+                0x00000c78                GIE_Disable
+ .text          0x00000c80      0x11a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+                0x00000c80                TIMER0_init
+                0x00000cb4                TIMER0_start
+                0x00000cc2                TIMER0_stop
+                0x00000cca                TIMER0_set_preload
+                0x00000cce                TIMER0_set_compare_match
+                0x00000cd2                TIMER0_set_call_back_fucntion
+                0x00000cfe                __vector_10
+                0x00000d4c                __vector_11
+ .text          0x00000d9a        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+ .text          0x00000d9a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text          0x00000d9a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000d9a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000d9a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000d9a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000d9a                        . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc.mul
+                0x00000d9a       0x1e C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00000d9a                __umulhisi3
+ .text.libgcc.div
+                0x00000db8        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000db8        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000db8        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000db8        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000db8        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000db8        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x00000db8        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x00000db8       0x44 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000db8                __udivmodsi4
+ .text.libgcc   0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000dfc                        . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000dfc        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00000dfc                _exit
+                0x00000dfc                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000dfc        0x4 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x00000e00                        . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+                0x00000e00                        _etext = .
+
+.data           0x00800060       0x22 load address 0x00000e00
+                0x00800060                        PROVIDE (__data_start = .)
+ *(.data)
+ .data          0x00800060        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ .data          0x00800060        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+ .data          0x00800060        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+ .data          0x00800060        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+ .data          0x00800060        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+ .data          0x00800060        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .data          0x00800060        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .data          0x00800060        0x3 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+                0x00800060                config_timer
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+ .data          0x00800063        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+ .data          0x00800063        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .data          0x00800063        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800063        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .data          0x00800063        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800063        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800063       0x1f C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+                                 0x11 (size before relaxing)
+ .rodata.str1.1
+                0x00800082        0xe C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ *(.gnu.linkonce.r*)
+                0x00800090                        . = ALIGN (0x2)
+                0x00800082                        _edata = .
+                0x00800082                        PROVIDE (__data_end = .)
+
+.bss            0x00800082       0x12
+                0x00800082                        PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x00800082        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ .bss           0x00800082        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+ .bss           0x00800082        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+ .bss           0x00800082        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+ .bss           0x00800082        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+ .bss           0x00800082        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .bss           0x00800082        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .bss           0x00800082        0x9 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .bss           0x0080008b        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .bss           0x0080008b        0x5 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .bss           0x00800090        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .bss           0x00800090        0x4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+ .bss           0x00800094        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+ .bss           0x00800094        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .bss           0x00800094        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800094        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00800094        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800094        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800094                        PROVIDE (__bss_end = .)
+                0x00000e00                        __data_load_start = LOADADDR (.data)
+                0x00000e22                        __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800094        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x00800094                        _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+                0x00000000                        __flmap_init_label = DEFINED (__flmap_noinit_start)?__flmap_noinit_start:0x0
+                0x00000000                        __flmap = DEFINED (__flmap)?__flmap:0x0
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                        __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+                                 0x30 (size before relaxing)
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+ .comment       0x0000002f       0x30 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x3c C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x200
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .debug_aranges
+                0x00000020       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .debug_aranges
+                0x00000040       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .debug_aranges
+                0x00000060       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .debug_aranges
+                0x00000080       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_aranges
+                0x000000a0       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_aranges
+                0x000000c0       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_aranges
+                0x000000e0       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_aranges
+                0x00000100       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_aranges
+                0x00000120       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_aranges
+                0x00000140       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_aranges
+                0x00000160       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_aranges
+                0x00000180       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_aranges
+                0x000001a0       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_aranges
+                0x000001c0       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .debug_aranges
+                0x000001e0       0x20 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x2ba9
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x4e6 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ .debug_info    0x000004e6      0x16b C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .debug_info    0x00000651       0xe3 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .debug_info    0x00000734      0x2e6 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .debug_info    0x00000a1a       0xe3 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .debug_info    0x00000afd      0x29e C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_info    0x00000d9b      0x153 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_info    0x00000eee      0x1c1 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_info    0x000010af      0xd36 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_info    0x00001de5      0x382 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_info    0x00002167      0x1c7 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_info    0x0000232e      0x1b5 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_info    0x000024e3      0x1a4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_info    0x00002687      0x1bd C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_info    0x00002844       0xfc C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_info    0x00002940       0x98 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .debug_info    0x000029d8      0x1d1 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+
+.debug_abbrev   0x00000000     0x1308
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x4a3 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ .debug_abbrev  0x000004a3       0xf9 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .debug_abbrev  0x0000059c       0x85 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .debug_abbrev  0x00000621      0x144 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .debug_abbrev  0x00000765       0x85 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .debug_abbrev  0x000007ea      0x195 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_abbrev  0x0000097f       0xca C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_abbrev  0x00000a49       0xca C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_abbrev  0x00000b13      0x19e C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_abbrev  0x00000cb1      0x13a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_abbrev  0x00000deb       0xd4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_abbrev  0x00000ebf       0xd4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_abbrev  0x00000f93       0xd7 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_abbrev  0x0000106a       0xaa C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_abbrev  0x00001114       0x8a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_abbrev  0x0000119e       0x47 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .debug_abbrev  0x000011e5      0x123 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+
+.debug_line     0x00000000     0x20a5
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1d C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ .debug_line    0x0000001d        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+ .debug_line    0x0000001d        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+ .debug_line    0x0000001d        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+ .debug_line    0x0000001d        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+ .debug_line    0x0000001d       0xad C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .debug_line    0x000000ca       0x64 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .debug_line    0x0000012e      0x193 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .debug_line    0x000002c1       0x64 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .debug_line    0x00000325      0x18c C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_line    0x000004b1       0xbb C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_line    0x0000056c       0xd5 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_line    0x00000641      0x905 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_line    0x00000f46      0x1ab C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_line    0x000010f1      0x100 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_line    0x000011f1       0xe8 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_line    0x000012d9      0x233 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_line    0x0000150c      0x5de C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_line    0x00001aea      0x302 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_line    0x00001dec       0x7c C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .debug_line    0x00001e68      0x23d C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+ .debug_line    0x000020a5        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+
+.debug_frame    0x00000000      0x554
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x24 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .debug_frame   0x00000024       0x24 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .debug_frame   0x00000048       0x34 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .debug_frame   0x0000007c       0x24 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .debug_frame   0x000000a0       0x34 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_frame   0x000000d4       0x34 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_frame   0x00000108       0x54 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_frame   0x0000015c       0xb8 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_frame   0x00000214       0x34 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_frame   0x00000248       0x34 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_frame   0x0000027c       0x34 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_frame   0x000002b0       0x94 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_frame   0x00000344       0x74 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_frame   0x000003b8       0x44 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_frame   0x000003fc       0x34 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .debug_frame   0x00000430      0x124 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+
+.debug_str      0x00000000      0x769
+ *(.debug_str)
+ .debug_str     0x00000000      0x196 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
+ .debug_str     0x00000196      0x5d3 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+                                 0x6a (size before relaxing)
+ .debug_str     0x00000769       0x6a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+ .debug_str     0x00000769       0x6a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+ .debug_str     0x00000769       0x6a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+ .debug_str     0x00000769      0x1b4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .debug_str     0x00000769      0x15e C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .debug_str     0x00000769      0x243 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .debug_str     0x00000769      0x15b C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .debug_str     0x00000769      0x21e C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_str     0x00000769      0x14d C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_str     0x00000769      0x15f C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_str     0x00000769      0x234 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_str     0x00000769      0x192 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_str     0x00000769      0x188 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_str     0x00000769      0x174 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_str     0x00000769      0x183 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_str     0x00000769      0x18e C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_str     0x00000769      0x12a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_str     0x00000769      0x105 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .debug_str     0x00000769      0x206 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+ .debug_str     0x00000769       0x6a C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x00000000     0x1417
+ *(.debug_line_str)
+ .debug_line_str
+                0x00000000     0x1417 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Emergency\Emergency_Program.c.o
+                                 0xc1 (size before relaxing)
+ .debug_line_str
+                0x00001417       0xb7 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Fire\Fire_Program.c.o
+ .debug_line_str
+                0x00001417       0xbb C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Normal\Normal_Program.c.o
+ .debug_line_str
+                0x00001417       0xbd C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Fire_detection\Warning\Warning_Program.c.o
+ .debug_line_str
+                0x00001417      0x3c1 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\main.c.o
+ .debug_line_str
+                0x00001417      0x268 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+ .debug_line_str
+                0x00001417      0x45b C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+ .debug_line_str
+                0x00001417      0x259 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\Recovery\Recovery_Program.c.o
+ .debug_line_str
+                0x00001417      0x48c C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_line_str
+                0x00001417      0x222 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_line_str
+                0x00001417      0x222 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_line_str
+                0x00001417      0x263 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_line_str
+                0x00001417      0x263 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_line_str
+                0x00001417      0x279 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_line_str
+                0x00001417      0x274 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_line_str
+                0x00001417      0x1b4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_line_str
+                0x00001417      0x1b4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_line_str
+                0x00001417      0x1b9 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_line_str
+                0x00001417      0x1b4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\GIE\GIE_Program.c.o
+ .debug_line_str
+                0x00001417      0x1ce C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+ .debug_line_str
+                0x00001417       0xa9 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\UART\UART_program.c.o
+
+.debug_loclists
+                0x00000000      0xdb6
+ *(.debug_loclists)
+ .debug_loclists
+                0x00000000       0x33 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\APP\Safty_manager\System\System_Program.c.o
+ .debug_loclists
+                0x00000033       0x1b C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUTTON\BUTTON_program.c.o
+ .debug_loclists
+                0x0000004e       0x14 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\BUZZER\BUZZER_program.c.o
+ .debug_loclists
+                0x00000062      0x5f2 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LCD\LCD_program.c.o
+ .debug_loclists
+                0x00000654       0xb4 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+ .debug_loclists
+                0x00000708       0x5f C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LM35\LM35_program.c.o
+ .debug_loclists
+                0x00000767       0x42 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\MQ2\MQ2_program.c.o
+ .debug_loclists
+                0x000007a9       0xf9 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\ADC\ADC_program.c.o
+ .debug_loclists
+                0x000008a2      0x348 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\DIO\DIO_program.c.o
+ .debug_loclists
+                0x00000bea      0x1a8 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\EXTI\EXTI_program.c.o
+ .debug_loclists
+                0x00000d92       0x24 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\MCAL\TIMER\TIMER_program.c.o
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x00000000       0x14
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x00000000       0x14 C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\HAL\LED\LED_program.c.o
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\debug\testing123.elf elf32-avr)
+LOAD linker stubs

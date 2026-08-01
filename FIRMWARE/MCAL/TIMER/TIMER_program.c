@@ -81,12 +81,18 @@ void TIMER0_set_call_back_fucntion (u8 timer_interupt_type , void (*PF)(void))
 // compare match
 void __vector_10(void)   __attribute__((signal));
 void __vector_10(void)
-{
-    timer0_CTCcallback();
+{   
+    if (timer0_CTCcallback != Null)
+    {
+        timer0_CTCcallback();
+    }
 }
 // overflow 
 void __vector_11(void)   __attribute__((signal));
 void __vector_11(void)
 {
-    timer0_OVFcallback();
+    if (timer0_OVFcallback != Null)
+    {
+        timer0_OVFcallback();
+    }
 }

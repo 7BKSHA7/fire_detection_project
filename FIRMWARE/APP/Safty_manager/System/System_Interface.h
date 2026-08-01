@@ -24,6 +24,7 @@
 #include "../../../HAL/LM35/LM35_interface.h"
 #include "../../../HAL/MQ2/MQ2_interface.h"
 #include "../../../HAL/BUZZER/BUZZER_interface.h"
+#include "../../../MCAL/EXTI/EXTI_interface.h"
 
 void SYSTEM_init ();
 void SYSTEM_update();

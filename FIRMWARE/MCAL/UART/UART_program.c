@@ -1,11 +1,4 @@
-#include "../../LIB/COMMON_MACROS.h"
-#include "../../LIB/BIT_MATH.h"
-#include "../../STD_TYPES.h"
-#include "REG_MAP.h"
-
-#include "UART_private.h"
 #include "UART_interface.h"
-#include "UART_config.h"
 
 static void (*PF_UartRX)(u16)= Null; 
 static void (*PF_UartTX)(void)= Null; 

@@ -8,15 +8,18 @@
 #include "Fire_detection/Normal/Normal_Interface.h"
 #include "Fire_detection/Warning/Warning_Interface.h"
 
+#include <util/delay.h>
+
 void main ()
 {
+    DIO_set_pin_direction(Dio_groupD , Dio_pin7 , output);
     SYSTEM_init();
-    MONITROING_init();
-    TIMER0_set_call_back_fucntion(Timer0_overflow_interput , MONITORING_update);
-    while(1)
-    {
-        MONITORING_update();
-        LCD_WriteNUMBER(MONITORING_get_values(temp_values) , Lcd_4bitMode);
+    // MONITROING_init();
+    // RECOVERY_init();
+    // MONITORING_update();
+    // RECOVERY_update();
+    // while(1)
+    // {
 
-    }
+    // }
 }
