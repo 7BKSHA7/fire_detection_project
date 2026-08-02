@@ -14,7 +14,10 @@
 
 #include "Monitoring_Config.h"
 #include "Monitoring_Private.h"
+
 #include "../System/System_Interface.h"
+#include "../Recovery/Recovery_Interface.h"
+#include "../EventLogger/EventLogger_Interface.h"
 
 #include "../../../HAL/LM35/LM35_interface.h"
 #include "../../../HAL/MQ2/MQ2_interface.h"
@@ -24,6 +27,6 @@
 
 void MONITROING_init();
 void MONITORING_update();
-
+u8 MONITORING_get_values(u8 type);
 
 #endif /* MONITORING_INTERFACE_H */

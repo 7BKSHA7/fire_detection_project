@@ -12,14 +12,11 @@
 
 void main ()
 {
-    DIO_set_pin_direction(Dio_groupD , Dio_pin7 , output);
     SYSTEM_init();
-    // MONITROING_init();
-    // RECOVERY_init();
-    // MONITORING_update();
+    MONITORING_update();
     // RECOVERY_update();
-    // while(1)
-    // {
-
-    // }
+    while(1)
+    {
+        
+    }
 }

@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   4996	    208	     31	   5235	   1473	C:\Users\beshoy\Desktop\fire_detection_project_7 - beshoy side\FIRMWARE\release\testing_light_out.elf

@@ -14,28 +14,18 @@
 
 // must be done after button and fire
 
-static volatile u8 Recovery_request = false ;
-
-void RECOVERY_button_pressed() // action to do 
-{
-    // Recovery_request = BUTTON_GetState();
-    BUZZER_On(); 
-}
-
 void RECOVERY_init() // init the recovery after emgerecny so we can ACK that the system is ok
 {
-    // enable the EXTI so it can register
-
-    // the call back fuction
-    // enable global interput
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+    LCD_WriteString("EMERGENCY" , Lcd_4bitMode);
+    LCD_GoToXY(Lcd_line1 , Lcd_column0 , Lcd_4bitMode);
+    LCD_WriteString("press the button" , Lcd_4bitMode);
 }
 
-u8 RECOVERY_update()
+void RECOVERY_update()
 {
-    if (Recovery_request == true)
-    {
-        Recovery_request = false ; // to tell the system that the user ack it
-        return true ;
-    }
-    return false ;
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+    LCD_WriteString("temp  : " , Lcd_4bitMode);
+    LCD_GoToXY(Lcd_line1 , Lcd_column0 , Lcd_4bitMode);
+    LCD_WriteString("smoke : " , Lcd_4bitMode);
 }

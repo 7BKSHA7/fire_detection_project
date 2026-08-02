@@ -26,21 +26,24 @@ void SYSTEM_init ()
     LM35_init(); // start the flame detetor
     BUTTON_init(); // start the button to read inputs
     BUZZER_init(); // start the buzzer to alarm the user
-    EXTI_Init(Exti_Interrupt0, Exti_FallingEdge);
-    EXTI_Enable(Exti_Interrupt0);
-    EXTI_set_call_back(RECOVERY_button_pressed); // not like this used 
+    // EXTI_Init(Exti_Interrupt0, Exti_FallingEdge);
+    // EXTI_Enable(Exti_Interrupt0);
+    // EXTI_set_call_back(RECOVERY_button_pressed); // not like this used 
 
-    GIE_Enable(); // enable the global interrupt to allow the EXTI to work
+    EVENTLOGGER_init();
+
+    MONITROING_init();
+
+    LCD_WriteString("SYS:init done" , Lcd_4bitMode);
+    _delay_ms(2000);
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+
+    LCD_WriteString("temp  : " , Lcd_4bitMode);
+    LCD_GoToXY(Lcd_line1 , Lcd_column0 , Lcd_4bitMode);
+    LCD_WriteString("smoke : " , Lcd_4bitMode);
+
     
-    // LCD_WriteString("SYS:init done" , Lcd_4bitMode);
-    // _delay_ms(2000);
-    // LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
-
-    // LCD_WriteString("temp  : " , Lcd_4bitMode);
-    // LCD_GoToXY(Lcd_line1 , Lcd_column0 , Lcd_4bitMode);
-    // LCD_WriteString("smoke : " , Lcd_4bitMode);
-
-    DIO_set_pin_value(Dio_groupD , Dio_pin7 , high);
+    GIE_Enable(); // enable the global interrupt to allow the EXTI to work
     
 }
 // update the system reading each time it runs in the while 1

@@ -20,8 +20,8 @@
 #include "../../../MCAL/EXTI/EXTI_interface.h"
 
 void RECOVERY_init();
-u8 RECOVERY_update();
-void RECOVERY_button_pressed();
+void RECOVERY_update();
+// void RECOVERY_button_pressed();
 
 
 #endif /* RECOVERY_INTERFACE_H */
