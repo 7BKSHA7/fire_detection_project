@@ -1,3 +1,16 @@
+/**
+ * @file      LED_program.c
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the LED Driver for the Fire Detection System.
+ * @details   This file contains the initialization function for the system's LEDs 
+ *            (Green, Yellow, Red) and the state machine logic to control them 
+ *            based on the current safety level (Normal, Warning, Fire, Emergency).
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 #include "../../LIB/BIT_MATH.h"
 #include "../../LIB/COMMON_MACROS.h"
 #include "../../LIB/STD_TYPES.h"
