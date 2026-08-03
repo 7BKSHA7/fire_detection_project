@@ -1,13 +1,15 @@
 /**
-* @file    System_Private.h
-* @author (beshoy)  
-* @author (beshoy)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      System_Private.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the core System application layer.
+ * @details   This file contains internal macros representing the different 
+ *            states of the Fire Alarm System (State Machine) and acknowledgment 
+ *            flags used by the system logic.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef _SYSTEM_PRIVATE_H_
 #define _SYSTEM_PRIVATE_H_
