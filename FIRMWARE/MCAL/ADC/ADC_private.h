@@ -1,3 +1,17 @@
+/**
+ * @file      ADC_private.h
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the ADC Driver.
+ * @details   This file contains internal macros, register bit definitions, 
+ *            and masks used by the ADC driver implementation. It should 
+ *            not be included by upper layers.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef ADC_PRIVATE_H_
 #define ADC_PRIVATE_H_
 
