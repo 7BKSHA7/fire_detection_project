@@ -1,3 +1,15 @@
+/**
+ * @file      LCD_private.h
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the LCD Driver.
+ * @details   This file contains private macros, memory addresses, and command instructions 
+ *            used internally by the LCD driver implementation. It should not be included by upper layers.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 #ifndef _LCD_PRIVATE_H_
 #define _LCD_PRIVATE_H_
 
