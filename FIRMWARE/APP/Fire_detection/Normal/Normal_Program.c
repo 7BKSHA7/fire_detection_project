@@ -43,7 +43,7 @@ FIRE_STATE_t NORMAL_voidRun(void)
 
 static u8 NORMAL_CheckTransition(u8 temp, u8 smoke)
 {
-    if ((temp > NORMAL_TEMP_THRESHOLD) || (smoke > NORMAL_SMOKE_THRESHOLD))
+    if ((45 > temp && temp > NORMAL_TEMP_THRESHOLD) || (70 > smoke && smoke > NORMAL_SMOKE_THRESHOLD))
     {
         return true;
     }
