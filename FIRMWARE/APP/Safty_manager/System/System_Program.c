@@ -1,13 +1,16 @@
 /**
-* @file    System_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      System_Program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the core System application layer.
+ * @details   This file contains the initialization and the main update loop logic 
+ *            for the Fire Alarm System. It orchestrates all HAL components (LCD, 
+ *            Sensors, LEDs, Buzzer) and manages the system states (Monitoring, 
+ *            Event Logging, and Recovery).
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "System_Interface.h"
 #include "../Monitoring/Monitoring_Interface.h"
