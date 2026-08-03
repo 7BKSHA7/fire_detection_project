@@ -1,13 +1,15 @@
 /**
-* @file    Normal_Interface.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Normal_Interface.h
+ * @author    Ali
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface for the Normal Fire State.
+ * @details   This file contains the function prototypes and public APIs 
+ *            for the Normal state. It also serves as the single source 
+ *            of truth for the global FIRE_STATE_t enumeration.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef NORMAL_INTERFACE_H
 #define NORMAL_INTERFACE_H
