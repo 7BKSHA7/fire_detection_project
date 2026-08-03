@@ -19,6 +19,11 @@
 #include "../Recovery/Recovery_Interface.h"
 #include "../EventLogger/EventLogger_Interface.h"
 
+#include "../../Fire_detection/Normal/Normal_Interface.h"
+#include "../../Fire_detection/Warning/Warning_Interface.h"
+#include "../../Fire_detection/Emergency/Emergency_Interface.h"
+#include "../../Fire_detection/Fire/Fire_Interface.h"
+
 #include "../../../HAL/LM35/LM35_interface.h"
 #include "../../../HAL/MQ2/MQ2_interface.h"
 #include "../../../MCAL/TIMER/TIMER_interface.h"
