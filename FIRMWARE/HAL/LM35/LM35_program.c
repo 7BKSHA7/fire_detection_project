@@ -1,3 +1,16 @@
+/**
+ * @file      LM35_program.c
+ * @author    Moaaz
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the LM35 Temperature Sensor Driver.
+ * @details   This file contains the initialization function for the LM35 sensor 
+ *            and the core logic to read the analog signal, process it through 
+ *            the ADC, and calculate the actual temperature in Celsius.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 #include "../../LIB/COMMON_MACROS.h"
 #include "../../LIB/STD_TYPES.h"
 
