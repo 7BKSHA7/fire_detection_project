@@ -1,6 +1,6 @@
 /**
  * @file      UART_private.h
- * @author    Beshoy
+ * @author    Moaaz
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Private definitions for the UART Driver.
  * @details   This file contains internal macros representing the microcontroller 
