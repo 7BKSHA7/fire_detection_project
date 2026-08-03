@@ -1,13 +1,15 @@
 /**
-* @file    MQ2_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      MQ2_program.c
+ * @author    Moaaz
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the MQ2 Smoke/Gas Sensor Driver.
+ * @details   This file contains the initialization function for the MQ2 sensor 
+ *            and the core logic to read the analog signal, process it through 
+ *            the ADC, and calculate the output voltage representing smoke concentration.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 
 #include "../../LIB/COMMON_MACROS.h"
