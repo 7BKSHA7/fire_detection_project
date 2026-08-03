@@ -21,8 +21,8 @@
  * and hand control to the warning state.
  * Tune these to your MQ2 / LM35 calibration.
  */
-#define NORMAL_TEMP_THRESHOLD      40   // degrees C, above this -> warning
-#define NORMAL_SMOKE_THRESHOLD     40   // smoke reading, above this -> warning
+#define NORMAL_TEMP_THRESHOLD      45   // degrees C, above this -> warning
+#define NORMAL_SMOKE_THRESHOLD     70   // smoke reading, above this -> warning
 
 
 #endif /* NORMAL_CONFIG_H */
