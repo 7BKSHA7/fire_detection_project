@@ -1,6 +1,6 @@
 /**
  * @file      Warning_Config.h
- * @author    Beshoy
+ * @author    Ali
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Configuration file for the Warning Fire State.
  * @details   This file contains user-configurable thresholds specific to 
