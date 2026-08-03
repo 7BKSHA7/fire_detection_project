@@ -1,3 +1,17 @@
+/**
+ * @file      DIO_program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the DIO (Digital Input/Output) Driver.
+ * @details   This file contains the implementation of functions to control the 
+ *            direction and value of individual pins and entire ports (groups) 
+ *            on the microcontroller. Includes defensive checks for valid inputs.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #include "../../LIB/STD_TYPES.h"
 #include "../../LIB/BIT_MATH.h"
 #include "../../LIB/COMMON_MACROS.h"
