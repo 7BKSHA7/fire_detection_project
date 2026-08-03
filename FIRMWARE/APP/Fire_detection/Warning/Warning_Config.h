@@ -1,13 +1,15 @@
 /**
-* @file    Warning_Config.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Warning_Config.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Configuration file for the Warning Fire State.
+ * @details   This file contains user-configurable thresholds specific to 
+ *            the Warning state logic, defining the lower and upper limits 
+ *            for temperature and smoke to handle escalation and de-escalation.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef WARNING_CONFIG_H_
 #define WARNING_CONFIG_H_
