@@ -35,6 +35,7 @@ u16 UART_ReceiveBytePolling();
 void UART_SendStringPolling(u8* String); // Characters 
 void UART_ReceiveStringPolling(u8* Buffer, u8 Terminator);
 void UART_SendBufferPolling(u8 * Buffer , u16 Length);//Raw Data 
+void UART_SendNumberPolling(u8 Number);
 
 // Driver Control API
 void UART_EnableRX();

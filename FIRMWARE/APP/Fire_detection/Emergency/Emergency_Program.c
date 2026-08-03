@@ -32,6 +32,7 @@ u8 EMERGENCY_voidRun(void)
     u8 currentTemp  = MONITORING_get_values(temp_values);
     u8 currentSmoke = MONITORING_get_values(smoke_values);
     
+    EVENTLOGGER_emergency();
     if (EMERGENCY_CheckTransition(currentTemp, currentSmoke) == true)
     {
         return FIRE_STATE_EMERGENCY;

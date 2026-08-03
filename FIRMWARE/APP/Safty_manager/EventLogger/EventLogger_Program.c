@@ -49,18 +49,24 @@ SYSTEM RESET
 void EVENTLOGGER_normal()
 {
     UART_SendStringPolling("temp  : ");
-    UART_SendBytePolling(MONITORING_get_values(temp_values));
+    UART_SendNumberPolling(MONITORING_get_values(temp_values));
     UART_SendStringPolling("\r\n");
 
     UART_SendStringPolling("smoke : ");
-    UART_SendBytePolling(MONITORING_get_values(smoke_values));
+    UART_SendNumberPolling(MONITORING_get_values(smoke_values));
     UART_SendStringPolling("\r\n");
 }
 
-void EVENTLOGGER_warning()
+void EVENTLOGGER_level1()
 {
-    UART_SendStringPolling("WARNING LEVEL 1\r\n");
+    UART_SendStringPolling("safe dont panic\r\n");
 }
+
+void EVENTLOGGER_level2()
+{
+    UART_SendStringPolling("WARNING\r\n");
+}
+
 
 void EVENTLOGGER_fire()
 {

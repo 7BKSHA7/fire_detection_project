@@ -52,7 +52,7 @@ void SYSTEM_init ()
     
 }
 // update the system reading each time it runs in the while 1
-u8 SYSTEM_update()
+void SYSTEM_self_test()
 {
     // system_state = NORMAL_voidRun();
     // return SYSTEM_switch_helper(system_state);

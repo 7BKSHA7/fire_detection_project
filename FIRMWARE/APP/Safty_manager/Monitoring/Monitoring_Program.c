@@ -68,8 +68,9 @@ void MONITORING_update() // mointer the numbers of temp and smoke // schudeler i
         if (button_state == BUTTON_PRESSED)
         {
             EVENTLOGGER_acknowledged();
-            current_state = FIRE_STATE_NORMAL ; // to tell the system that the user ack it
+            current_state = FIRE_STATE_NORMAL; // to tell the system that the user ack it
             RECOVERY_update();
+            EVENTLOGGER_reset();
         }
     }
     else 

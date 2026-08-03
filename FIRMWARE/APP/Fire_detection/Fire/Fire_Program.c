@@ -26,6 +26,7 @@ u8 FIRE_voidRun(void)
         // return FIRE_STATE_FIRE;
     }
     
+    EVENTLOGGER_fire();
     LED_SetStatus(LED_STATE_NOTICE_FIRE);    
     // No alarm
     BUZZER_On();

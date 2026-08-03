@@ -31,6 +31,7 @@ u8 WARNING_voidRun(void)
         // return FIRE_STATE_FIRE;
     }
     
+    EVENTLOGGER_level2();
     // Yellow LED ON, everything else off
     LED_SetStatus(LED_STATE_WARNING);
 

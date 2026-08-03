@@ -229,3 +229,29 @@ void UART_DisableTX()
 {
     ClearBit(UCSRB,Uart_TXEN);
 }
+
+void UART_SendNumberPolling(u8 Number)
+{
+    u8 array[10];
+    s8 counter = 0;
+
+
+    if(Number == 0)
+    {
+        UART_SendBytePolling('0'); 
+        return;
+    }
+
+
+    while(Number > 0)
+    {
+        array[counter] = (Number % 10) + '0'; 
+        counter++;
+        Number /= 10;
+    }
+
+    for(counter = counter - 1; counter >= 0; counter--)
+    {
+        UART_SendBytePolling(array[counter]);
+    }
+} 

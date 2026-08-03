@@ -11,6 +11,7 @@ u8 NORMAL_voidRun(void)
         // return FIRE_STATE_WARNING;
     }
     
+    EVENTLOGGER_level1();
     // Green LED ON, everything else off
     LED_SetStatus(LED_STATE_NORMAL);
     
