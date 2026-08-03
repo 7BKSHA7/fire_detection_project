@@ -19,6 +19,7 @@
 #include "../../../MCAL/DIO/DIO_interface.h"
 #include <util/delay.h>
 
+static u8 system_state = FIRE_STATE_NORMAL ;
 // intilazit the system to start all HAL drivers in the program so everything starts working
 void SYSTEM_init () 
 {
@@ -46,16 +47,35 @@ void SYSTEM_init ()
     LCD_WriteString("smoke : " , Lcd_4bitMode);
 
     
+    
     GIE_Enable(); // enable the global interrupt to allow the EXTI to work
     
 }
 // update the system reading each time it runs in the while 1
-void SYSTEM_update()
+u8 SYSTEM_update()
 {
-    // start to mointer
-    // chnage state 
-    // fire state
-    // log 
-    // recovr from state
-    
+    // system_state = NORMAL_voidRun();
+    // return SYSTEM_switch_helper(system_state);
 }
+
+// u8 SYSTEM_switch_helper (u8 data)
+// {
+//     switch(data)
+//     {        
+//         case FIRE_STATE_NORMAL :
+//             return FIRE_STATE_NORMAL;
+//             break;
+//         case FIRE_STATE_WARNING :
+//             return FIRE_STATE_WARNING;
+//             break;
+//         case FIRE_STATE_FIRE :
+//             return FIRE_STATE_FIRE;
+//             break;
+//         case FIRE_STATE_EMERGENCY :
+//             return FIRE_STATE_EMERGENCY;
+//             break;
+//         default: 
+//             return FIRE_STATE_NORMAL;
+//             break;
+//     }
+// }

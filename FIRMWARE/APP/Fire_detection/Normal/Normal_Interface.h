@@ -2,6 +2,17 @@
 #define NORMAL_INTERFACE_H_
 
 #include "../../../LIB/STD_TYPES.h"
+#include "../../../LIB/STD_TYPES.h"
+#include "../../../LIB/BIT_MATH.h"
+#include "../../../LIB/COMMON_MACROS.h"
+
+#include "../../../HAL/LED/LED_interface.h"
+#include "../../../HAL/LED/LED_private.h"
+#include "../../../HAL/BUZZER/BUZZER_interface.h"
+#include "../../Safty_manager/Monitoring/Monitoring_Interface.h"
+
+#include "NORMAL_config.h"
+#include "NORMAL_private.h"
 
 /* Shared fire-detection states.
  * This is the single source of truth for these state values.

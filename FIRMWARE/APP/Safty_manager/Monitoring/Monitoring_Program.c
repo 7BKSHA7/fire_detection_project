@@ -22,7 +22,7 @@ timer0_config_t config_timer =  // timer configuration to start the timer in nor
 
 static u8 temperature = 0 ;
 static u8 smoke = 0;
-static u8 current_state = NORMAL ; // to know if the system is in emergency or not to stop the monitoring when in emergency
+static u8 current_state = FIRE_STATE_NORMAL ; // to know if the system is in emergency or not to stop the monitoring when in emergency
 static u8 button_state = BUTTON_RELEASED ; // to know if the button is pressed or not to stop the monitoring when in emergency
 
 void MONITROING_init() // intialize the monitoring program to start the timer and enable global interrupt and write the first line of lcd
@@ -32,7 +32,20 @@ void MONITROING_init() // intialize the monitoring program to start the timer an
     TIMER0_set_call_back_fucntion(Timer0_overflow_interput , MONITORING_update);
 }
 
-
+/*
+4 fucntions
+read temps 
+read smoke 
+if temp || smoke < values 
+    -> next level
+if false
+    -> stay level
+normal
+warning
+fire
+emgergecny
+*/
+// timer 
 void MONITORING_update() // mointer the numbers of temp and smoke // schudeler insted of just mointering
 {
     static u32 count = 0 ;
@@ -43,18 +56,20 @@ void MONITORING_update() // mointer the numbers of temp and smoke // schudeler i
     // if the button is not pressed and the system is not in emergency then
     // the system contiues to read the values and update lcd
     // but if its emergecny then we say recovery and ask for button to be pressed
+    
     if ((count % 2) == 0) // read the button value every 50ms 
     {
         button_state = BUTTON_GetState();
     }
     if (current_state == FIRE_STATE_EMERGENCY)
     {
-        EVENTLOGGER_emergency();
+        // EVENTLOGGER_emergency();
         // RECOVERY_init();
         if (button_state == BUTTON_PRESSED)
         {
             EVENTLOGGER_acknowledged();
             current_state = FIRE_STATE_NORMAL ; // to tell the system that the user ack it
+            LCD_WriteString("test" , Lcd_4bitMode);
             RECOVERY_update();
         }
     }
@@ -65,15 +80,15 @@ void MONITORING_update() // mointer the numbers of temp and smoke // schudeler i
             temperature = LM35_get_temperature();
             smoke = MQ2_read_smoke();
         }
-        if ((count % 5) == 0)  // 250 / 50  // every 250ms
+        if ((count % 5) == 0 && (current_state != FIRE_STATE_EMERGENCY))  // 250 / 50  // every 250ms
         {
             LCD_GoToXY(Lcd_line0 , Lcd_column8 , Lcd_4bitMode);
             LCD_WriteString("        " , Lcd_4bitMode);
             LCD_GoToXY(Lcd_line0 , Lcd_column8 , Lcd_4bitMode);
             LCD_WriteNUMBER(temperature , Lcd_4bitMode);
-    
+            
             LCD_GoToXY(Lcd_line1 , Lcd_column8 , Lcd_4bitMode);
-    
+            
             LCD_WriteString("        " , Lcd_4bitMode);
             LCD_GoToXY(Lcd_line1 , Lcd_column8 , Lcd_4bitMode);
             LCD_WriteNUMBER(smoke , Lcd_4bitMode);
@@ -83,11 +98,13 @@ void MONITORING_update() // mointer the numbers of temp and smoke // schudeler i
     }
     if ((count % 20) == 0) // 1 sec
     {
+        current_state = NORMAL_voidRun();
         // uart update
         EVENTLOGGER_normal();
         TIMER0_set_preload(timer_preload_value);
         count = 0 ;    
     }
+    
 }
 
 u8 MONITORING_get_values(u8 type)  // send the values of temp and smoke to system 
@@ -101,3 +118,25 @@ u8 MONITORING_get_values(u8 type)  // send the values of temp and smoke to syste
         return smoke;
     }
 }
+
+// u8 SYSTEM_switch_helper (u8 data)
+// {
+//     switch(data)
+//     {        
+//         case FIRE_STATE_NORMAL :
+//             return FIRE_STATE_NORMAL;
+//             break;
+//         case FIRE_STATE_WARNING :
+//             return FIRE_STATE_WARNING;
+//             break;
+//         case FIRE_STATE_FIRE :
+//             return FIRE_STATE_FIRE;
+//             break;
+//         case FIRE_STATE_EMERGENCY :
+//             return FIRE_STATE_EMERGENCY;
+//             break;
+//         default: 
+//             return FIRE_STATE_NORMAL;
+//             break;
+//     }
+// }

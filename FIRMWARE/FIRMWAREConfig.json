@@ -7,7 +7,7 @@
   "mcu": "atmega32",
   "language": "C",
   "languageVersion": "C99",
-  "mcuFrequency": "7",
+  "mcuFrequency": "6",
   "frequencyUnit": "MHz",
   "sourceFiles": [],
   "compilerPath": "",

@@ -18,6 +18,6 @@
 #include "Fire_Private.h"
 #include "Fire_Config.h"
 
-FIRE_STATE_t FIRE_voidRun(void);
+u8 FIRE_voidRun(void);
 
 #endif /* FIRE_INTERFACE_H */

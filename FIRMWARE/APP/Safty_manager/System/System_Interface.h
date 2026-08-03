@@ -31,6 +31,7 @@
 #include "../../../MCAL/EXTI/EXTI_interface.h"
 
 void SYSTEM_init ();
-void SYSTEM_update();
+u8 SYSTEM_update();
+// u8 SYSTEM_switch_helper (u8 data);
 
 #endif /* SYSTEM_INTERFACE_H */
