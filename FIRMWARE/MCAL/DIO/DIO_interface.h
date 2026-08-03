@@ -1,3 +1,17 @@
+/**
+ * @file      DIO_interface.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the DIO (Digital Input/Output) Driver.
+ * @details   This file contains the function prototypes and public APIs used by 
+ *            upper layers to control the direction and state of microcontroller 
+ *            pins and ports.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef _DIO_INTERFACE_H_
 #define _DIO_INTERFACE_H_
 
