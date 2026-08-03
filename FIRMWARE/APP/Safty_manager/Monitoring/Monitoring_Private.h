@@ -1,13 +1,14 @@
 /**
-* @file    Monitoring_Private.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Monitoring_Private.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the Monitoring subsystem.
+ * @details   This file contains internal macros, timer calculation constants, 
+ *            and parameter definitions used exclusively by the Monitoring module.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef _MONITORING_PRIVATE_H_
 #define _MONITORING_PRIVATE_H_
