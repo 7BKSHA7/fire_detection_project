@@ -1,13 +1,17 @@
 /**
-* @file    Monitoring_Interface.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Monitoring_Interface.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the Monitoring subsystem.
+ * @details   This file contains the function prototypes and public APIs for 
+ *            the Monitoring module. It serves as the bridge between the 
+ *            hardware sensors (LM35, MQ2), the timer scheduler, and the 
+ *            application layer logic (Fire states and Event Logging).
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 
 #ifndef _MONITORING_INTERFACE_H_
 #define _MONITORING_INTERFACE_H_
