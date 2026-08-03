@@ -1,14 +1,15 @@
 /**
-* @file    Normal_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
-
+ * @file      Normal_Program.c
+ * @author    Ali
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the Normal Fire State.
+ * @details   This file handles the default safe state of the system, keeping
+ *            alarms off and the green LED on. It continuously monitors sensors
+ *            to transition to the WARNING state if thresholds are exceeded.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "NORMAL_interface.h"
 
