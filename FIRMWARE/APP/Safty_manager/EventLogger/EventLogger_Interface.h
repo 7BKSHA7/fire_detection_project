@@ -1,13 +1,15 @@
 /**
-* @file    EventLogger_Interface.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      EventLogger_Interface.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the Event Logger subsystem.
+ * @details   This file contains the function prototypes and public APIs for 
+ *            the Event Logger module, allowing the main system to log various 
+ *            states, sensor readings, and emergency events via UART.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef EVENTLOGGER_INTERFACE_H
 #define EVENTLOGGER_INTERFACE_H

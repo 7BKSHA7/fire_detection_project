@@ -1,17 +1,11 @@
-/**
-* @file    Warning_Interface.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+#ifndef WARNING_INTERFACE_H_
+#define WARNING_INTERFACE_H_
 
-#ifndef WARNING_INTERFACE_H
-#define WARNING_INTERFACE_H
+#include "../NORMAL/NORMAL_interface.h"   // shared FIRE_STATE_* defines
 
+/* runs the warning-state behavior once, returns the state
+ * the system should be in on the NEXT cycle
+ */
+u8 WARNING_voidRun(void);
 
-
-#endif /* WARNING_INTERFACE_H */
+#endif /* WARNING_INTERFACE_H_ */

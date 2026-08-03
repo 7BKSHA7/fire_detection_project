@@ -1,13 +1,22 @@
 /**
-* @file    Normal_Config.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Normal_Config.h
+ * @author    Ali
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Configuration file for the Normal Fire State.
+ * @details   This file contains user-configurable parameters and thresholds 
+ *            specific to the Normal state logic. It defines the limits at 
+ *            which the system transitions from Normal to Warning.
+ *            
+ *            System States Overview:
+ *            - NORMAL:    Temp < 45, Smoke < 70 (Green light, continue reading)
+ *            - WARNING:   45 <= Temp < 60, 70 <= Smoke < 130 (Yellow light, Warning LCD)
+ *            - FIRE:      60 <= Temp < 70, 130 <= Smoke < 200 (Red light, Fire LCD, Buzzer ON)
+ *            - EMERGENCY: Temp >= 70, Smoke >= 200 (Red light blink, Emergency LCD, Buzzer toggle, Stop reading until ACK)
+ * 
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 /*
 fire_temp < 45

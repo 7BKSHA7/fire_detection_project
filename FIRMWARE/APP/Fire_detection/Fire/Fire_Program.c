@@ -10,6 +10,7 @@
 */
 
 #include "Fire_Interface.h"
+
 FIRE_STATE_t FIRE_voidRun(void)
 {
     LED_SetStatus(LED_STATE_NOTICE_FIRE);
@@ -28,10 +29,10 @@ FIRE_STATE_t FIRE_voidRun(void)
     return FIRE_STATE_WARNING;
 
 }
-
+// WARNING_TEMP_THRESHOLD
 static u8 FIRE_CheckTransition(u8 temp, u8 smoke)
 {
-    if ((temp > WARNING_TEMP_THRESHOLD && temp <= FIRE_TEMP_THRESHOLD) || (smoke > WARNING_TEMP_THRESHOLD && smoke <= FIRE_SMOKE_THRESHOLD))
+    if ((temp > 60 && temp <= FIRE_TEMP_THRESHOLD) || (smoke > 60 && smoke <= FIRE_SMOKE_THRESHOLD))
     {
         return true;   // yes, limit reached -> time to leave normal
     }

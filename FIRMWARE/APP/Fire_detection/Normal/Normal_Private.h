@@ -1,13 +1,14 @@
 /**
-* @file    Normal_Private.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Normal_Private.h
+ * @author    Ali
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the Normal Fire State.
+ * @details   This file is reserved for internal macros, private constants, 
+ *            and internal states specific to the Normal state logic.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef NORMAL_PRIVATE_H
 #define NORMAL_PRIVATE_H

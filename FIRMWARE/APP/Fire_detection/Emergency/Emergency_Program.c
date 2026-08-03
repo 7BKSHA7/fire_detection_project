@@ -1,13 +1,15 @@
 /**
-* @file    Emergency_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Emergency_Program.c
+ * @author    Ali
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the Emergency Fire State.
+ * @details   This file handles the logic for the most critical state of the system,
+ *            triggering alarms, blinking LEDs, and locking the system until manually 
+ *            acknowledged by the user.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "Emergency_Interface.h" 
 /*
@@ -34,7 +36,7 @@ FIRE_STATE_t EMERGENCY_voidRun(void)
     {
         return FIRE_STATE_EMERGENCY;
     }
-    return FIRE_STATE_FIRE;
+    return FIRE_STATE_NORMAL;
 }
 
 static u8 EMERGENCY_CheckTransition(u8 temp, u8 smoke)
