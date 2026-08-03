@@ -15,7 +15,7 @@
 #ifndef _UART_INTERFACE_H_
 #define _UART_INTERFACE_H_
 
-#include "../../STD_TYPES.h"
+#include "../../LIB/STD_TYPES.h"
 
 /*
     1- Mode Select -> Asynch / Synch 
