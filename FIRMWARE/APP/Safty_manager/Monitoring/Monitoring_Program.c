@@ -1,13 +1,16 @@
 /**
-* @file    Monitoring_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Monitoring_Program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the Monitoring subsystem.
+ * @details   This file contains a timer-based scheduler that periodically reads 
+ *            the temperature and smoke sensors, updates the LCD, and handles 
+ *            the state transitions into emergencies.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 
 #include "Monitoring_Interface.h"
 

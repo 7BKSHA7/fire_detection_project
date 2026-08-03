@@ -1,13 +1,14 @@
 /**
-* @file    EventLogger_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      EventLogger_Program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the Event Logger subsystem.
+ * @details   This file contains the logic for logging system events, states, 
+ *            and sensor readings over UART to an external monitor or PC.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "EventLogger_Interface.h"
 
