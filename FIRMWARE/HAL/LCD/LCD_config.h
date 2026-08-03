@@ -1,3 +1,16 @@
+/**
+ * @file      LCD_config.h
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Configuration file for the LCD Driver.
+ * @details   This file contains user-configurable parameters such as the hardware 
+ *            ports and pins to which the LCD is connected (RS, EN, and Data pins).
+ *            Note: The RW (Read/Write) pin is assumed to be connected to GND.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 #ifndef _LCD_CONFIG_C_
 #define _LCD_CONFIG_C_
 
