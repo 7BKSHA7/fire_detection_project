@@ -20,7 +20,6 @@ Uart_Config_t Uart_Config_event_logger =
     .SizeCharacterSelect = Uart_8BitSize,
     .SpeedMode = Uart_NormalSpeed,
     .BaudRate = 9600,
-    .InterruptSelect = Uart_InterruptDisabled,
     .EnbaleSelect = Uart_EnableRxAndTx
 };
 void EVENTLOGGER_init()
