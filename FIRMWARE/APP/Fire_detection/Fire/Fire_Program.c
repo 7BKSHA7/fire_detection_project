@@ -10,4 +10,5 @@
  * @version   1.0.0
  * @date      3 August 2026
  * @copyright Copyright (c) 2026, Gestell Company
+ */
 
