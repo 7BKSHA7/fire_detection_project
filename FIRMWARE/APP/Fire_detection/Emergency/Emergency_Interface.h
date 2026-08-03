@@ -1,6 +1,6 @@
 /**
  * @file      Emergency_Interface.h
- * @author    Beshoy
+ * @author    Ali
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Interface for the Emergency Fire State.
  * @details   This file contains the function prototypes and public APIs 
