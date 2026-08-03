@@ -1,3 +1,16 @@
+/**
+ * @file      ADC_program.c
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the ADC (Analog-to-Digital Converter) Driver.
+ * @details   This file contains the initialization and control functions for the ADC module,
+ *            including channel selection, prescaler configuration, result adjustment,
+ *            and reading the converted analog values using polling mechanism.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 
 #include "../../LIB/BIT_MATH.h"
 #include "../../LIB/COMMON_MACROS.h"
