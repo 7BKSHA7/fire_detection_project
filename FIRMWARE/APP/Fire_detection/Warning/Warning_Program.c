@@ -1,13 +1,16 @@
 /**
-* @file    Warning_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Warning_Program.c
+ * @author    Ali
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the Warning Fire State.
+ * @details   This file handles the intermediate warning state. It turns on the 
+ *            yellow LED and displays a warning on the LCD, without triggering 
+ *            the auditory alarm. It continuously checks whether to escalate to 
+ *            the FIRE state or de-escalate back to the NORMAL state.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "../../../LIB/STD_TYPES.h"
 #include "../../../LIB/BIT_MATH.h"
