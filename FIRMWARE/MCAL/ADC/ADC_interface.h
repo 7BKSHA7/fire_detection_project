@@ -1,3 +1,16 @@
+/**
+ * @file      ADC_interface.h
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the ADC (Analog-to-Digital Converter) Driver.
+ * @details   This file contains the function prototypes and public APIs used by 
+ *            upper layers to initialize, configure, and interact with the ADC module.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef ADC_INTERFACE_H_
 #define ADC_INTERFACE_H_
 
