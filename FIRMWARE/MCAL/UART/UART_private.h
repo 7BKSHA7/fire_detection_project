@@ -1,3 +1,17 @@
+/**
+ * @file      UART_private.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the UART Driver.
+ * @details   This file contains internal macros representing the microcontroller 
+ *            register bits for UART (UCSRA, UCSRB, UCSRC), configuration constants, 
+ *            and the main configuration structure used by the driver.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef _UART_PRIVATE_H
 #define _UART_PRIVATE_H
 #include "../../LIB/STD_TYPES.h"
