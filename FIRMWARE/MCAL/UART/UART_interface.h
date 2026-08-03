@@ -15,13 +15,7 @@
 #ifndef _UART_INTERFACE_H_
 #define _UART_INTERFACE_H_
 
-#include "../../LIB/COMMON_MACROS.h"
-#include "../../LIB/BIT_MATH.h"
-#include "../../LIB/STD_TYPES.h"
-#include "../REG_MAP.h"
-#include "UART_config.h"
-#include "UART_private.h"
-
+#include "../../STD_TYPES.h"
 
 /*
     1- Mode Select -> Asynch / Synch 
@@ -39,21 +33,6 @@ u16 UART_ReceiveBytePolling();
 void UART_SendStringPolling(u8* String); // Characters 
 void UART_ReceiveStringPolling(u8* Buffer, u8 Terminator);
 void UART_SendBufferPolling(u8 * Buffer , u16 Length);//Raw Data 
-
-// Interrupt API
-void UART_SendByteInterrupt(u16 Data);
-
-void UART_EnableRXInterrupt();
-void UART_EnableTXInterrupt();
-void UART_EnableREInterrupt();
-
-void UART_DisableRXInterrupt();
-void UART_DisableTXInterrupt();
-void UART_DisableREInterrupt();
-
-void UART_SetRXCallback(void (*PF)(u16));
-void UART_SetTXCallback(void (*PF)(void));
-void UART_SetRECallback(void (*PF)(void));
 
 // Driver Control API
 void UART_EnableRX();

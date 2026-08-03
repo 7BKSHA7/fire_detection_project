@@ -11,19 +11,23 @@
  */
 
 
+#include "../../LIB/COMMON_MACROS.h"
+#include "../../LIB/BIT_MATH.h"
+#include "../../STD_TYPES.h"
+#include "REG_MAP.h"
+
+#include "UART_private.h"
 #include "UART_interface.h"
+#include "UART_config.h"
 
-static void (*PF_UartRX)(u16)= Null; 
-static void (*PF_UartTX)(void)= Null; 
-static void (*PF_UartRE)(void)= Null; 
-
+ 
 static Uart_Config_t GlobaleUart_Config = {0};
 
 // Initialization API
 void UART_Init(Uart_Config_t Uart_Config)
 {
-    u8 Local_UCSRCValue = 0 ;
-    GlobaleUart_Config = Uart_Config ; 
+    u8 Local_UCSRCValue = 0;
+    GlobaleUart_Config = Uart_Config; 
 
     // UCSRC -> Register Select must be 1 
     SetBit (Local_UCSRCValue ,Uart_URSEL);
@@ -123,45 +127,6 @@ void UART_Init(Uart_Config_t Uart_Config)
     // 0 0 0 0 0 0 0 0 
     // 0 0 0 0 0 1 1 1
     
-    // Interrupt 
-    UART_DisableRXInterrupt();
-    UART_DisableTXInterrupt();
-    UART_DisableREInterrupt();
-
-    if(Uart_Config.InterruptSelect == Uart_InterruptRxOnly)
-    {
-        UART_EnableRXInterrupt();
-    }
-    else if(Uart_Config.InterruptSelect == Uart_InterruptTxOnly)
-    {
-        UART_EnableTXInterrupt();
-    }
-    else if(Uart_Config.InterruptSelect == Uart_InterruptUdreOnly)
-    {
-        UART_EnableREInterrupt();
-    }
-    else if(Uart_Config.InterruptSelect == Uart_InterruptRxTx)
-    {
-        UART_EnableRXInterrupt();
-        UART_EnableTXInterrupt();
-    }
-    else if(Uart_Config.InterruptSelect == Uart_InterruptRxUdre)
-    {
-        UART_EnableRXInterrupt();
-        UART_EnableREInterrupt();
-    }
-    else if(Uart_Config.InterruptSelect == Uart_InterruptTxUdre)
-    {
-        UART_EnableTXInterrupt();
-        UART_EnableREInterrupt();
-    }
-    else if(Uart_Config.InterruptSelect == Uart_InterruptAll)
-    {
-        UART_EnableTXInterrupt();
-        UART_EnableRXInterrupt();
-        UART_EnableREInterrupt();
-    }
-
     // Enable 
     if(Uart_Config.EnbaleSelect == Uart_EnableRxOnly)
     {
@@ -211,7 +176,7 @@ u16 UART_ReceiveBytePolling()
         }
     }
     LocalData|=UDR;
-    return UDR;
+    return LocalData;
 }
 void UART_SendStringPolling(u8* String)
 {
@@ -263,99 +228,4 @@ void UART_DisableRX()
 void UART_DisableTX()
 {
     ClearBit(UCSRB,Uart_TXEN);
-}
-
-
-
-// Interrupt API
-void UART_SendByteInterrupt(u16 Data)
-{
-
-}
-void UART_EnableRXInterrupt()
-{
-    // UCSRB
-    SetBit(UCSRB,Uart_RXCIE);
-}
-void UART_EnableTXInterrupt()
-{
-    // UCSRB
-    SetBit(UCSRB,Uart_TXCIE);
-}
-void UART_EnableREInterrupt()
-{
-    // UCSRB 
-    SetBit(UCSRB,Uart_UDRIE); 
-}
-void UART_DisableRXInterrupt()
-{
-    // UCSRB 
-    ClearBit(UCSRB,Uart_RXCIE);
-}
-void UART_DisableTXInterrupt()
-{
-    // UCSRB 
-    ClearBit(UCSRB,Uart_TXCIE);
-}
-void UART_DisableREInterrupt()
-{
-    // UCSRB 
-    ClearBit(UCSRB,Uart_UDRIE);
-}
-
-
-
-void UART_SetRXCallback(void (*PF)(u16))
-{
-    if(PF!=Null)
-    {
-        PF_UartRX=PF;
-    }
-}
-void UART_SetTXCallback(void (*PF)(void))
-{
-    if(PF!=Null)
-    {
-        PF_UartTX=PF;
-    }
-}
-void UART_SetRECallback(void (*PF)(void))
-{
-    if(PF!=Null)
-    {
-        PF_UartRE=PF;
-    }
-}
-
-
-// RX Complete
-void __vector_13(void)
-{
-    if(PF_UartRX!=Null)
-    {
-        u16 LocalData = 0 ;
-        //Check on the Size of character 
-        // if Size less than 9  -> LocalData = UDR;
-        // if Size  == 9
-        // Read the RXB8 Update in LocalData 
-        // Update the UDR 
-        PF_UartRX(LocalData);
-    }
-
-}
-// TX Complete
-void __vector_15(void)
-{
-    if(PF_UartTX!=Null)
-    {
-        PF_UartTX();
-    }
-}
-
-void __vector_14(void)
-{
-    if(PF_UartRE!=Null)
-    {
-        PF_UartRE();
-    }
 }
