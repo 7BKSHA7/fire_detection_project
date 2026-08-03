@@ -9,18 +9,8 @@
 * @copyright Copyright (c) 2026, Gestell Company
 */
 
-#include "../../../LIB/STD_TYPES.h"
-#include "../../../LIB/BIT_MATH.h"
-#include "../../../LIB/COMMON_MACROS.h"
-
-#include "../../../HAL/LED/LED_interface.h"
-#include "../../../HAL/LED/LED_private.h"     // <-- needed for LED_STATE_NORMAL etc.
-#include "../../../HAL/BUZZER/BUZZER_interface.h"
-#include "../../Safty_manager/Monitoring/Monitoring_Interface.h"
 
 #include "NORMAL_interface.h"
-#include "NORMAL_config.h"
-#include "NORMAL_private.h"
 
 FIRE_STATE_t NORMAL_voidRun(void)
 {

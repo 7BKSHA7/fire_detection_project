@@ -1,13 +1,13 @@
 {
   "projectName": "FIRMWARE",
-  "projectPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7 - beshoy side\\FIRMWARE",
-  "outputPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7 - beshoy side\\FIRMWARE",
-  "outputName": "testing_light_out",
+  "projectPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7\\FIRMWARE",
+  "outputPath": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7\\FIRMWARE",
+  "outputName": "testing_fire",
   "target": "AVR",
   "mcu": "atmega32",
   "language": "C",
   "languageVersion": "C99",
-  "mcuFrequency": "8",
+  "mcuFrequency": "7",
   "frequencyUnit": "MHz",
   "sourceFiles": [],
   "compilerPath": "",
@@ -25,6 +25,6 @@
   "port": "COM5 - Standard Serial over Bluetooth link (COM5)",
   "baudRate": "115200",
   "timeout": "5000",
-  "firmwareFile": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7 - beshoy side\\FIRMWARE/testing_light_out.hex",
+  "firmwareFile": "C:\\Users\\beshoy\\Desktop\\fire_detection_project_7\\FIRMWARE/testing_fire.hex",
   "programmer": "usbasp"
 }

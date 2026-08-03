@@ -9,11 +9,40 @@
 * @copyright Copyright (c) 2026, Gestell Company
 */
 
+/*
+fire_temp < 45
+smoke_temp < 70
+green - light 
+contiune reading
+----------------------------
+waring
+fire_temp > 45 && < 60 
+smoke_temp > 70 &&  < 130
+yellow - light 
+contiue reading no lcd write
+lcd - waring
+----------------------------
+fire
+fire_temp > 60 && < 70 
+smoke_temp > 130 &&  < 200
+contiue reading no lcd write
+red - light
+lcd - fire alarm 
+buzzer on 
+---------------------------
+emergecny 
+fire_temp > 70
+smoke_temp > 200
+red - light blinking
+stop reading until ACK
+warning lcd 
+buzzer toggle
+---------------------------
+
+*/
 #ifndef NORMAL_CONFIG_H
 #define NORMAL_CONFIG_H
 
-#ifndef NORMAL_CONFIG_H
-#define NORMAL_CONFIG_H
 
 #include "../../../LIB/STD_TYPES.h"
 
