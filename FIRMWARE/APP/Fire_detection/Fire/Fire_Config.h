@@ -1,6 +1,6 @@
 /**
  * @file      Fire_Config.h
- * @author    Beshoy
+ * @author    Ali
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Configuration file for the Fire State.
  * @details   This file contains user-configurable thresholds specific to 
