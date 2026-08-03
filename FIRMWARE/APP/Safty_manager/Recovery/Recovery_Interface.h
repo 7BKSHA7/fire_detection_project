@@ -1,13 +1,15 @@
 /**
-* @file    Recovery_Interface.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Recovery_Interface.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the Recovery subsystem.
+ * @details   This file contains the function prototypes and public APIs for 
+ *            the Recovery module, allowing the main system to trigger and 
+ *            manage the recovery phase after an emergency.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef RECOVERY_INTERFACE_H
 #define RECOVERY_INTERFACE_H
