@@ -15,7 +15,6 @@
 #ifndef _UART_PRIVATE_H
 #define _UART_PRIVATE_H
 
-#include "../../STD_TYPES.h"
 
 // UCSRA
 #define Uart_RXC  7 
