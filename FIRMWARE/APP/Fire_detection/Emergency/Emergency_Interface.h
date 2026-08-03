@@ -12,11 +12,10 @@
  * @date      3 August 2026
  * @copyright Copyright (c) 2026, Gestell Company
  */
-
 #ifndef EMERGENCY_INTERFACE_H
 #define EMERGENCY_INTERFACE_H
 
-#include "../Normal/Normal_Interface.h"
+#include "../Normal/Normal_Interface.h"   // shared FIRE_STATE_* defines
 #include "Emergency_Private.h"
 #include "Emergency_Config.h"
 
@@ -30,8 +29,6 @@ warning lcd
 buzzer toggle
 ---------------------------
 */
-
-FIRE_STATE_t EMERGENCY_voidRun(void);
-
+u8 EMERGENCY_voidRun(void);
 
 #endif /* EMERGENCY_INTERFACE_H */
