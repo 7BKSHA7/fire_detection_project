@@ -1,13 +1,15 @@
 /**
-* @file    System_Interface.h
-* @author beshoy  
-* @author beshoy
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      System_Interface.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the core System application layer.
+ * @details   This file contains the function prototypes for the main system 
+ *            initialization and the continuous update loop. It acts as the 
+ *            central hub including all necessary HAL and MCAL drivers.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef _SYSTEM_INTERFACE_H_
 #define _SYSTEM_INTERFACE_H_
