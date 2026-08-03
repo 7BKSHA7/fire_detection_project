@@ -34,7 +34,7 @@ FIRE_STATE_t EMERGENCY_voidRun(void)
     {
         return FIRE_STATE_EMERGENCY;
     }
-    return FIRE_STATE_NORMAL;
+    return FIRE_STATE_FIRE;
 }
 
 static u8 EMERGENCY_CheckTransition(u8 temp, u8 smoke)

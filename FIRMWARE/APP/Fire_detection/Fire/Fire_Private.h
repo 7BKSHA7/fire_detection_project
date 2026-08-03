@@ -12,6 +12,7 @@
 #ifndef FIRE_PRIVATE_H
 #define FIRE_PRIVATE_H
 
+static u8 FIRE_CheckTransition(u8 temp, u8 smoke);
 
 
 #endif /* FIRE_PRIVATE_H */
