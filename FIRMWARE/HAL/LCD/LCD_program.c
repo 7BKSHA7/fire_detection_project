@@ -1,3 +1,16 @@
+/**
+ * @file      LCD_program.c
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the LCD (Liquid Crystal Display) Driver.
+ * @details   This file contains the core implementation for initializing and controlling 
+ *            the LCD in both 4-bit and 8-bit modes. It includes functions for writing 
+ *            data, commands, strings, and numbers, as well as cursor positioning.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 #include "../../LIB/BIT_MATH.h"
 #include "../../LIB/COMMON_MACROS.h"
 #include "../../LIB/STD_TYPES.h"
