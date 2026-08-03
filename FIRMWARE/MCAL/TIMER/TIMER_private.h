@@ -1,3 +1,17 @@
+/**
+ * @file      TIMER_private.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the TIMER0 Driver.
+ * @details   This file contains internal macros representing the microcontroller 
+ *            register bits for Timer0 (TCCR0, TIMSK), along with configuration 
+ *            constants and the configuration structure used by the driver.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef _TIMER_PRIVATE_H_
 #define _TIMER_PRIVATE_H_
 
