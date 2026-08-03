@@ -1,3 +1,16 @@
+/**
+ * @file      UART_program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the UART (Universal Asynchronous Receiver-Transmitter) Driver.
+ * @details   This file contains the implementation of UART initialization, 
+ *            polling-based send/receive, interrupt controls, and callbacks.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #include "UART_interface.h"
 
 static void (*PF_UartRX)(u16)= Null; 
