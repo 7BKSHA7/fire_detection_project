@@ -1,3 +1,18 @@
+/**
+ * @file      EXTI_program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the EXTI (External Interrupt) Driver.
+ * @details   This file contains the configuration and control functions for 
+ *            the External Interrupts (INT0, INT1, INT2). It handles sense 
+ *            control setup, enabling/disabling interrupts, and managing ISR 
+ *            callbacks to upper application layers.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #include "EXTI_interface.h"
 static void (*INT0_call_back)(void) =Null;
 
