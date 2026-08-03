@@ -1,3 +1,17 @@
+/**
+ * @file      DIO_private.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the DIO Driver.
+ * @details   This file contains internal macros representing the microcontroller 
+ *            ports (groups) and pins. These are used by the DIO implementation 
+ *            and are essential for hardware configuration.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef _DIO_PRIVATE_H_
 #define _DIO_PRIVATE_H_
 
