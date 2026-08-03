@@ -10,8 +10,8 @@
  * @date      3 August 2026
  * @copyright Copyright (c) 2026, Gestell Company
  */
+#include "Emergency_Interface.h"
 
-#include "Emergency_Interface.h" 
 /*
 emergecny 
 fire_temp > 70
@@ -22,17 +22,16 @@ warning lcd
 buzzer toggle
 ---------------------------
 */
-
-FIRE_STATE_t EMERGENCY_voidRun(void)
+u8 EMERGENCY_voidRun(void)
 {
     LED_SetStatus(LED_STATE_EMERGENCY);  // red light blinking
     BUZZER_Toggle();
-    LCD_WriteString("!!EMERGENCY!!" , Lcd_4bitMode);
+    LCD_WriteString((u8*)"!!EMERGENCY!!", Lcd_4bitMode);
 
     u8 currentTemp  = MONITORING_get_values(temp_values);
     u8 currentSmoke = MONITORING_get_values(smoke_values);
 
-    if (EMERGENCY_CheckTransition(currentTemp , currentSmoke) == true)
+    if (EMERGENCY_CheckTransition(currentTemp, currentSmoke) == true)
     {
         return FIRE_STATE_EMERGENCY;
     }
@@ -47,5 +46,4 @@ static u8 EMERGENCY_CheckTransition(u8 temp, u8 smoke)
     }
     return false;
 }
-
 
