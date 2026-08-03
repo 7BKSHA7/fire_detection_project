@@ -1,3 +1,17 @@
+/**
+ * @file      UART_interface.h
+ * @author    Moaaz
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the UART (Universal Asynchronous Receiver-Transmitter) Driver.
+ * @details   This file contains the function prototypes and public APIs used by 
+ *            upper layers to initialize, control, and communicate over UART using 
+ *            both Polling (Blocking) and Interrupt (Non-Blocking) mechanisms.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef _UART_INTERFACE_H_
 #define _UART_INTERFACE_H_
 
