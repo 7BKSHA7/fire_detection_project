@@ -1,6 +1,6 @@
 /**
  * @file      Normal_Config.h
- * @author    Beshoy
+ * @author    Ali
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Configuration file for the Normal Fire State.
  * @details   This file contains user-configurable parameters and thresholds 
