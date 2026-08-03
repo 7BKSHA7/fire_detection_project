@@ -13,7 +13,7 @@
 
 #include "../../LIB/COMMON_MACROS.h"
 #include "../../LIB/BIT_MATH.h"
-#include "../../STD_TYPES.h"
+#include "../../LIB/STD_TYPES.h"
 #include "REG_MAP.h"
 
 #include "UART_private.h"
