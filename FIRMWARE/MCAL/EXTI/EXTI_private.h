@@ -1,3 +1,17 @@
+/**
+ * @file      EXTI_private.h
+ * @author    Ali
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the EXTI (External Interrupt) Driver.
+ * @details   This file contains internal macros representing the microcontroller 
+ *            register bits for external interrupts (MCUCR, MCUCSR, GICR, GIFR), 
+ *            along with configuration constants used by the EXTI implementation.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef _EXTI_PRIVATE_H_
 #define _EXTI_PRIVATE_H_
 
