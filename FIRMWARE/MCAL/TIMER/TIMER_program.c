@@ -1,13 +1,15 @@
 /**
-* @file    TIMER_Program.c
-* @author  beshoy  
-* @author  beshoy
-* @brief  implentation of timer driver
-* @details  contains all function implementations and init
-* @version  1.0
-* @date 29/7/2026
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      TIMER_program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the TIMER0 Driver.
+ * @details   This file contains the implementation of Timer0 initialization, 
+ *            start, stop, and callback assignment functions. It supports 
+ *            Normal (Overflow) and CTC (Compare Match) modes.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "TIMER_interface.h"
 
