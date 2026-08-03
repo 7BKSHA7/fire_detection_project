@@ -1,6 +1,6 @@
 /**
  * @file      EXTI_interface.h
- * @author    Beshoy
+ * @author    Ali
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Interface of the EXTI (External Interrupt) Driver.
  * @details   This file contains the function prototypes and public APIs used by 
