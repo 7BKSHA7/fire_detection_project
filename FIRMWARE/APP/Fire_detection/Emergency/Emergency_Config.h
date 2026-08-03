@@ -1,13 +1,15 @@
 /**
-* @file    Emergency_Config.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Emergency_Config.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Configuration file for the Emergency Fire State.
+ * @details   This file contains user-configurable parameters and thresholds 
+ *            specific to the Emergency state logic, such as temperature and 
+ *            smoke limits.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef EMERGENCY_CONFIG_H
 #define EMERGENCY_CONFIG_H
