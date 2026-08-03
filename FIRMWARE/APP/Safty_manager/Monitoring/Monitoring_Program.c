@@ -69,7 +69,6 @@ void MONITORING_update() // mointer the numbers of temp and smoke // schudeler i
         {
             EVENTLOGGER_acknowledged();
             current_state = FIRE_STATE_NORMAL ; // to tell the system that the user ack it
-            LCD_WriteString("test" , Lcd_4bitMode);
             RECOVERY_update();
         }
     }
@@ -118,25 +117,3 @@ u8 MONITORING_get_values(u8 type)  // send the values of temp and smoke to syste
         return smoke;
     }
 }
-
-// u8 SYSTEM_switch_helper (u8 data)
-// {
-//     switch(data)
-//     {        
-//         case FIRE_STATE_NORMAL :
-//             return FIRE_STATE_NORMAL;
-//             break;
-//         case FIRE_STATE_WARNING :
-//             return FIRE_STATE_WARNING;
-//             break;
-//         case FIRE_STATE_FIRE :
-//             return FIRE_STATE_FIRE;
-//             break;
-//         case FIRE_STATE_EMERGENCY :
-//             return FIRE_STATE_EMERGENCY;
-//             break;
-//         default: 
-//             return FIRE_STATE_NORMAL;
-//             break;
-//     }
-// }

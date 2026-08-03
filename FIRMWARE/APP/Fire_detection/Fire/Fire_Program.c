@@ -26,9 +26,7 @@ u8 FIRE_voidRun(void)
         // return FIRE_STATE_FIRE;
     }
     
-    LED_SetStatus(LED_STATE_NOTICE_FIRE);
-    LCD_WriteString((u8*)"!!FIRE!!", Lcd_4bitMode);
-    
+    LED_SetStatus(LED_STATE_NOTICE_FIRE);    
     // No alarm
     BUZZER_On();
     return FIRE_STATE_WARNING;
