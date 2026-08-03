@@ -20,12 +20,13 @@
 #include "../../Safty_manager/Monitoring/Monitoring_Interface.h"
 
 #include "../NORMAL/NORMAL_Config.h"
+#include "../NORMAL/NORMAL_Interface.h"
 
 #include "WARNING_interface.h"
 #include "WARNING_config.h"
 #include "WARNING_private.h"
 
-FIRE_STATE_t WARNING_voidRun(void)
+u8 WARNING_voidRun(void)
 {
     // Yellow LED ON, everything else off
     LED_SetStatus(LED_STATE_WARNING);
