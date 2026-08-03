@@ -46,7 +46,7 @@ u8 WARNING_voidRun(void)
 
 static u8 WARNING_CheckEscalateToFire(u8 temp, u8 smoke)
 {
-   if ((temp > NORMAL_TEMP_THRESHOLD && temp <= WARNING_TEMP_THRESHOLD) || (smoke > NORMAL_SMOKE_THRESHOLD && smoke <= WARNING_SMOKE_THRESHOLD))
+   if ((temp >= WARNING_TEMP_THRESHOLD) || (smoke >= WARNING_SMOKE_THRESHOLD))
     {
         return true;
     }

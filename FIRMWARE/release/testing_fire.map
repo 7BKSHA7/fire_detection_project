@@ -155,7 +155,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1372
+.text           0x00000000     0x136a
  *(.vectors)
  .vectors       0x00000000       0x54 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -232,181 +232,181 @@ END GROUP
                 0x0000008e                __vector_20
  .text          0x00000092       0x50 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Fire_detection\Emergency\Emergency_Program.c.o
                 0x00000092                EMERGENCY_voidRun
- .text          0x000000e2       0x4e C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Fire_detection\Fire\Fire_Program.c.o
+ .text          0x000000e2       0x4a C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Fire_detection\Fire\Fire_Program.c.o
                 0x000000e2                FIRE_voidRun
- .text          0x00000130       0x40 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Fire_detection\Normal\Normal_Program.c.o
-                0x00000130                NORMAL_voidRun
- .text          0x00000170       0x44 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Fire_detection\Warning\Warning_Program.c.o
-                0x00000170                WARNING_voidRun
- .text          0x000001b4        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\main.c.o
- .text          0x000001b4       0xa4 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
-                0x000001b4                EVENTLOGGER_init
-                0x000001f8                EVENTLOGGER_normal
-                0x00000230                EVENTLOGGER_warning
-                0x00000238                EVENTLOGGER_fire
-                0x00000240                EVENTLOGGER_acknowledged
-                0x00000248                EVENTLOGGER_reset
-                0x00000250                EVENTLOGGER_emergency
- .text          0x00000258      0x21c C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
-                0x00000258                MONITORING_update
-                0x00000440                MONITROING_init
-                0x00000460                MONITORING_get_values
- .text          0x00000474       0x4c C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\Recovery\Recovery_Program.c.o
-                0x00000474                RECOVERY_init
-                0x0000049a                RECOVERY_update
- .text          0x000004c0       0x6a C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\System\System_Program.c.o
-                0x000004c0                SYSTEM_init
-                0x00000528                SYSTEM_update
- .text          0x0000052a       0x26 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\BUTTON\BUTTON_program.c.o
-                0x0000052a                BUTTON_init
-                0x0000053e                BUTTON_GetState
- .text          0x00000550       0x3e C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\BUZZER\BUZZER_program.c.o
-                0x00000550                BUZZER_init
-                0x00000564                BUZZER_On
-                0x0000056e                BUZZER_Off
-                0x00000578                BUZZER_Toggle
- .text          0x0000058e      0x520 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\LCD\LCD_program.c.o
-                0x0000064c                LCD_WriteData
-                0x0000072a                LCD_WriteCommand
-                0x00000786                LCD_INIT
-                0x00000942                LCD_WriteString
-                0x00000986                LCD_GoToXY
-                0x000009f6                LCD_WriteNUMBER
- .text          0x00000aae       0xac C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\LED\LED_program.c.o
-                0x00000aae                LED_initialization
-                0x00000acc                LED_SetStatus
- .text          0x00000b5a       0x54 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\LM35\LM35_program.c.o
-                0x00000b5a                LM35_init
-                0x00000b70                LM35_get_temperature
- .text          0x00000bae       0x44 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\MQ2\MQ2_program.c.o
-                0x00000bae                MQ2_init
-                0x00000bc4                MQ2_read_smoke
- .text          0x00000bf2       0x80 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\ADC\ADC_program.c.o
-                0x00000bf2                ADC_Init
-                0x00000c2e                ADC_Enable
-                0x00000c32                ADC_Disable
-                0x00000c36                ADC_Adjust
-                0x00000c46                ADC_Channel
-                0x00000c50                ADC_StartConversion
-                0x00000c58                ADC_Prescaler
-                0x00000c62                ADC_ReadResult
- .text          0x00000c72      0x1b0 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\DIO\DIO_program.c.o
-                0x00000c72                DIO_set_pin_direction
-                0x00000ce8                DIO_set_pin_value
-                0x00000d5e                DIO_get_pin_value
-                0x00000dbe                DIO_set_group_direction
-                0x00000dde                DIO_set_group_value
-                0x00000dfe                DIO_get_group_value
- .text          0x00000e22      0x166 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\EXTI\EXTI_program.c.o
-                0x00000e22                EXTI_Init
-                0x00000edc                EXTI_Enable
-                0x00000f02                EXTI_Disable
-                0x00000f28                EXTI_set_call_back
-                0x00000f36                __vector_1
- .text          0x00000f88       0x10 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\GIE\GIE_Program.c.o
-                0x00000f88                GIE_Enable
-                0x00000f90                GIE_Disable
- .text          0x00000f98      0x11e C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\TIMER\TIMER_program.c.o
-                0x00000f98                TIMER0_init
-                0x00000fcc                TIMER0_start
-                0x00000fda                TIMER0_stop
-                0x00000fe2                TIMER0_set_preload
-                0x00000fe6                TIMER0_set_compare_match
-                0x00000fea                TIMER0_set_call_back_fucntion
-                0x00001012                __vector_10
-                0x00001064                __vector_11
- .text          0x000010b6      0x24c C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\UART\UART_program.c.o
-                0x000010b6                UART_Init
-                0x00001216                UART_SendBytePolling
-                0x00001234                UART_ReceiveBytePolling
-                0x00001250                UART_SendStringPolling
-                0x0000127a                UART_ReceiveStringPolling
-                0x000012cc                UART_SendBufferPolling
-                0x000012f2                UART_EnableRX
-                0x000012f6                UART_EnableTX
-                0x000012fa                UART_DisableRX
-                0x000012fe                UART_DisableTX
- .text          0x00001302        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
- .text          0x00001302        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .text          0x00001302        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
- .text          0x00001302        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
- .text          0x00001302        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
-                0x00001302                        . = ALIGN (0x2)
+ .text          0x0000012c       0x40 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Fire_detection\Normal\Normal_Program.c.o
+                0x0000012c                NORMAL_voidRun
+ .text          0x0000016c       0x40 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Fire_detection\Warning\Warning_Program.c.o
+                0x0000016c                WARNING_voidRun
+ .text          0x000001ac        0x0 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\main.c.o
+ .text          0x000001ac       0xa4 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\EventLogger\EventLogger_Program.c.o
+                0x000001ac                EVENTLOGGER_init
+                0x000001f0                EVENTLOGGER_normal
+                0x00000228                EVENTLOGGER_warning
+                0x00000230                EVENTLOGGER_fire
+                0x00000238                EVENTLOGGER_acknowledged
+                0x00000240                EVENTLOGGER_reset
+                0x00000248                EVENTLOGGER_emergency
+ .text          0x00000250      0x21c C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\Monitoring\Monitoring_Program.c.o
+                0x00000250                MONITORING_update
+                0x00000438                MONITROING_init
+                0x00000458                MONITORING_get_values
+ .text          0x0000046c       0x4c C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\Recovery\Recovery_Program.c.o
+                0x0000046c                RECOVERY_init
+                0x00000492                RECOVERY_update
+ .text          0x000004b8       0x6a C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\Safty_manager\System\System_Program.c.o
+                0x000004b8                SYSTEM_init
+                0x00000520                SYSTEM_update
+ .text          0x00000522       0x26 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\BUTTON\BUTTON_program.c.o
+                0x00000522                BUTTON_init
+                0x00000536                BUTTON_GetState
+ .text          0x00000548       0x3e C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\BUZZER\BUZZER_program.c.o
+                0x00000548                BUZZER_init
+                0x0000055c                BUZZER_On
+                0x00000566                BUZZER_Off
+                0x00000570                BUZZER_Toggle
+ .text          0x00000586      0x520 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\LCD\LCD_program.c.o
+                0x00000644                LCD_WriteData
+                0x00000722                LCD_WriteCommand
+                0x0000077e                LCD_INIT
+                0x0000093a                LCD_WriteString
+                0x0000097e                LCD_GoToXY
+                0x000009ee                LCD_WriteNUMBER
+ .text          0x00000aa6       0xac C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\LED\LED_program.c.o
+                0x00000aa6                LED_initialization
+                0x00000ac4                LED_SetStatus
+ .text          0x00000b52       0x54 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\LM35\LM35_program.c.o
+                0x00000b52                LM35_init
+                0x00000b68                LM35_get_temperature
+ .text          0x00000ba6       0x44 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\HAL\MQ2\MQ2_program.c.o
+                0x00000ba6                MQ2_init
+                0x00000bbc                MQ2_read_smoke
+ .text          0x00000bea       0x80 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\ADC\ADC_program.c.o
+                0x00000bea                ADC_Init
+                0x00000c26                ADC_Enable
+                0x00000c2a                ADC_Disable
+                0x00000c2e                ADC_Adjust
+                0x00000c3e                ADC_Channel
+                0x00000c48                ADC_StartConversion
+                0x00000c50                ADC_Prescaler
+                0x00000c5a                ADC_ReadResult
+ .text          0x00000c6a      0x1b0 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\DIO\DIO_program.c.o
+                0x00000c6a                DIO_set_pin_direction
+                0x00000ce0                DIO_set_pin_value
+                0x00000d56                DIO_get_pin_value
+                0x00000db6                DIO_set_group_direction
+                0x00000dd6                DIO_set_group_value
+                0x00000df6                DIO_get_group_value
+ .text          0x00000e1a      0x166 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\EXTI\EXTI_program.c.o
+                0x00000e1a                EXTI_Init
+                0x00000ed4                EXTI_Enable
+                0x00000efa                EXTI_Disable
+                0x00000f20                EXTI_set_call_back
+                0x00000f2e                __vector_1
+ .text          0x00000f80       0x10 C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\GIE\GIE_Program.c.o
+                0x00000f80                GIE_Enable
+                0x00000f88                GIE_Disable
+ .text          0x00000f90      0x11e C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\TIMER\TIMER_program.c.o
+                0x00000f90                TIMER0_init
+                0x00000fc4                TIMER0_start
+                0x00000fd2                TIMER0_stop
+                0x00000fda                TIMER0_set_preload
+                0x00000fde                TIMER0_set_compare_match
+                0x00000fe2                TIMER0_set_call_back_fucntion
+                0x0000100a                __vector_10
+                0x0000105c                __vector_11
+ .text          0x000010ae      0x24c C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\MCAL\UART\UART_program.c.o
+                0x000010ae                UART_Init
+                0x0000120e                UART_SendBytePolling
+                0x0000122c                UART_ReceiveBytePolling
+                0x00001248                UART_SendStringPolling
+                0x00001272                UART_ReceiveStringPolling
+                0x000012c4                UART_SendBufferPolling
+                0x000012ea                UART_EnableRX
+                0x000012ee                UART_EnableTX
+                0x000012f2                UART_DisableRX
+                0x000012f6                UART_DisableTX
+ .text          0x000012fa        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text          0x000012fa        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x000012fa        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text          0x000012fa        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x000012fa        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000012fa                        . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x00001302        0xa C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\main.c.o
-                0x00001302                main
+ .text.startup  0x000012fa        0xa C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\APP\main.c.o
+                0x000012fa                main
  .text.libgcc.mul
-                0x0000130c       0x1e C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
-                0x0000130c                __umulhisi3
+                0x00001304       0x1e C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00001304                __umulhisi3
  .text.libgcc.div
-                0x0000132a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc   0x0000132a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00001322        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00001322        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.prologue
-                0x0000132a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00001322        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.builtins
-                0x0000132a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00001322        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.fmul
-                0x0000132a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00001322        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.fixed
-                0x0000132a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00001322        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.mul
-                0x0000132a        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001322        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.div
-                0x0000132a       0x44 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000132a                __udivmodsi4
- .text.libgcc   0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001322       0x44 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001322                __udivmodsi4
+ .text.libgcc   0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.prologue
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.builtins
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.fmul
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.fixed
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.mul
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fixed
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
-                0x0000136e                        . = ALIGN (0x2)
+                0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00001366                        . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000136e        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
-                0x0000136e                _exit
-                0x0000136e                exit
+ .fini9         0x00001366        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+                0x00001366                _exit
+                0x00001366                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -425,17 +425,17 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000136e        0x4 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001366        0x4 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x00001372                        . = ALIGN (0x2)
+                0x0000136a                        . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
-                0x00001372                        _etext = .
+                0x0000136a                        _etext = .
 
-.data           0x00800060       0xe4 load address 0x00001372
+.data           0x00800060       0xe4 load address 0x0000136a
                 0x00800060                        PROVIDE (__data_start = .)
  *(.data)
  .data          0x00800060        0x0 C:/avr-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr5/crtatmega32.o
@@ -523,8 +523,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 0x0080015c                        PROVIDE (__bss_end = .)
-                0x00001372                        __data_load_start = LOADADDR (.data)
-                0x00001456                        __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000136a                        __data_load_start = LOADADDR (.data)
+                0x0000144e                        __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080015c        0x0
                 [!provide]                        PROVIDE (__noinit_start = .)

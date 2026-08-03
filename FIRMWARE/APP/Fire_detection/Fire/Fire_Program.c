@@ -28,6 +28,7 @@ u8 FIRE_voidRun(void)
     
     LED_SetStatus(LED_STATE_NOTICE_FIRE);
     LCD_WriteString((u8*)"!!FIRE!!", Lcd_4bitMode);
+    
     // No alarm
     BUZZER_On();
     return FIRE_STATE_WARNING;
@@ -36,7 +37,7 @@ u8 FIRE_voidRun(void)
 // WARNING_TEMP_THRESHOLD
 static u8 FIRE_CheckTransition(u8 temp, u8 smoke)
 {
-    if ((temp > WARNING_TEMP_THRESHOLD && temp <= FIRE_TEMP_THRESHOLD) || (smoke > WARNING_SMOKE_THRESHOLD && smoke <= FIRE_SMOKE_THRESHOLD))
+    if ((temp >= FIRE_TEMP_THRESHOLD) || (smoke >= FIRE_SMOKE_THRESHOLD))
     {
         return true;   // yes, limit reached -> time to leave normal
     }
