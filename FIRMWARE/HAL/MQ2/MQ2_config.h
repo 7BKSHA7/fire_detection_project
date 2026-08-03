@@ -1,13 +1,15 @@
 /**
-* @file    MQ2_Config.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      MQ2_config.h
+ * @author    Moaaz
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Configuration file for the MQ2 Smoke/Gas Sensor Driver.
+ * @details   This file contains user-configurable parameters such as the hardware 
+ *            port, pin, and the specific ADC channel to which the MQ2 sensor is connected.
+ *            Users can easily migrate the sensor to another ADC pin by updating these macros.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef MQ2_CONFIG_H
 #define MQ2_CONFIG_H
