@@ -1,3 +1,17 @@
+/**
+ * @file      EXTI_interface.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the EXTI (External Interrupt) Driver.
+ * @details   This file contains the function prototypes and public APIs used by 
+ *            upper layers to initialize, configure, and control the External 
+ *            Interrupts (INT0, INT1, INT2) and set their callback functions.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
+
 #ifndef _EXTI_INTERFACE_H_
 #define _EXTI_INTERFACE_H_
 
