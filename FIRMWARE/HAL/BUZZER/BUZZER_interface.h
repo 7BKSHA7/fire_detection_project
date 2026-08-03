@@ -1,13 +1,14 @@
 /**
-* @file    Buzzer_Interface.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Buzzer_Interface.h
+ * @author    Youssef
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Interface of the Buzzer Driver.
+ * @details   This file contains the function prototypes and public APIs used by 
+ *            upper layers to control the Buzzer module.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #ifndef BUZZER_INTERFACE_H
 #define BUZZER_INTERFACE_H
