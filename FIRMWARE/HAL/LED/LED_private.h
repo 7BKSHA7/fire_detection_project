@@ -1,3 +1,16 @@
+/**
+ * @file      LED_Private.h
+ * @author    Rohayem
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the LED Driver.
+ * @details   This file contains internal macros representing the different states 
+ *            of the Fire Detection System. These states dictate the behavior of 
+ *            the system's LEDs.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
+
 #ifndef LED_PRIVATE_H
 #define LED_PRIVATE_H
 
