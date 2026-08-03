@@ -16,6 +16,9 @@
 
 #include "../../MCAL/DIO/DIO_private.h"
 
+
+#define LCD_datapins   0xF0 
+#define LCD_datapins_all 0xFF
 #define LCD_RSPin      Dio_pin2 // Register_Select pin + group
 #define LCD_RSGroup    Dio_groupC
 

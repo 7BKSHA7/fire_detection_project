@@ -33,7 +33,7 @@ void UART_Init(Uart_Config_t Uart_Config)
     SetBit (Local_UCSRCValue ,Uart_URSEL);
 
     // 1- Mode Select 
-    if(Uart_Config.ModeSelect==Uart_AsynchronousMode)
+    if(Uart_Config.ModeSelect==Uart_AsynchronousMode) // for our MC 
     {
         ClearBit(Local_UCSRCValue,Uart_UMSEL);
     }

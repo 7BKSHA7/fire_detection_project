@@ -40,6 +40,7 @@ void SYSTEM_init ()
 
     LCD_WriteString("SYS:init done" , Lcd_4bitMode);
     _delay_ms(2000);
+    SYSTEM_self_test();
     LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
 
     LCD_WriteString("temp  : " , Lcd_4bitMode);
@@ -54,28 +55,35 @@ void SYSTEM_init ()
 // update the system reading each time it runs in the while 1
 void SYSTEM_self_test()
 {
-    // system_state = NORMAL_voidRun();
-    // return SYSTEM_switch_helper(system_state);
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+    LCD_WriteString("SYS:Self Test" , Lcd_4bitMode);
+    _delay_ms(500);
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+
+    LCD_WriteString("SYS:led green" , Lcd_4bitMode);
+    LED_SetStatus(LED_STATE_NORMAL);
+    _delay_ms(500);
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+
+    LCD_WriteString("SYS:led yellow" , Lcd_4bitMode);
+    LED_SetStatus(LED_STATE_WARNING);
+    _delay_ms(500);
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+
+    LCD_WriteString("SYS:led red" , Lcd_4bitMode);
+    LED_SetStatus(LED_STATE_NOTICE_FIRE);
+    _delay_ms(500);
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+
+    LCD_WriteString("SYS:buzzer" , Lcd_4bitMode);
+    BUZZER_On();
+    _delay_ms(500);
+    BUZZER_Off();   
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+
+    LCD_WriteString("SYS:self done" , Lcd_4bitMode);
+    _delay_ms(500);
+    LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+
 }
 
-// u8 SYSTEM_switch_helper (u8 data)
-// {
-//     switch(data)
-//     {        
-//         case FIRE_STATE_NORMAL :
-//             return FIRE_STATE_NORMAL;
-//             break;
-//         case FIRE_STATE_WARNING :
-//             return FIRE_STATE_WARNING;
-//             break;
-//         case FIRE_STATE_FIRE :
-//             return FIRE_STATE_FIRE;
-//             break;
-//         case FIRE_STATE_EMERGENCY :
-//             return FIRE_STATE_EMERGENCY;
-//             break;
-//         default: 
-//             return FIRE_STATE_NORMAL;
-//             break;
-//     }
-// }

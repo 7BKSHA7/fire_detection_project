@@ -25,17 +25,17 @@ void ADC_Init(u8 Mode)
 {
     switch(Mode)
     {
-    case ADC_AREF:
+    case ADC_AREF:  // External referen volt -- 5V
     ClearBit(ADMUX, ADC_REFS0);
     ClearBit(ADMUX, ADC_REFS1);
     break;
 
-    case ADC_AVCC:
+    case ADC_AVCC:  // AVCC from MC
     SetBit(ADMUX, ADC_REFS0);
     ClearBit(ADMUX, ADC_REFS1);
     break;
 
-    case ADC_Internal:
+    case ADC_Internal:  // Internal referen volt -- 2.56V
     SetBit(ADMUX, ADC_REFS0);
     SetBit(ADMUX, ADC_REFS1);
     break;
@@ -59,14 +59,14 @@ void ADC_Disable()
 
 void ADC_Adjust(u8 Adjust_Direction)
 {
-     if(Adjust_Direction== ADC_RIGHT_ADJUST)
-     {
-     ClearBit(ADMUX, ADC_ADLAR);
-     }
-     else if(Adjust_Direction== ADC_LEFT_ADJUST)
-     {
-     SetBit(ADMUX, ADC_ADLAR);
-     }
+    if(Adjust_Direction== ADC_RIGHT_ADJUST)
+    {
+        ClearBit(ADMUX, ADC_ADLAR);
+    }
+    else if(Adjust_Direction== ADC_LEFT_ADJUST)
+    {
+        SetBit(ADMUX, ADC_ADLAR);
+    }
 }
 
 void ADC_Channel(u8 Channel)
@@ -83,7 +83,7 @@ void ADC_StartConversion(u8 Mode)
 {
     if(Mode==ADC_SINGLE_CONVERSION)
     {
-    SetBit(ADCSRA,ADC_ADSC);
+        SetBit(ADCSRA,ADC_ADSC);
     }
 }
 

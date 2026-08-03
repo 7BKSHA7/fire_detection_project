@@ -689,5 +689,5 @@ END GROUP
 
 .debug_sup
  *(.debug_sup)
-OUTPUT(C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\testing_fire.elf elf32-avr)
+OUTPUT(C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\PROJECT.elf elf32-avr)
 LOAD linker stubs

@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   5418	    304	     24	   5746	   1672	C:\Users\beshoy\Desktop\fire_detection_project_7\FIRMWARE\release\PROJECT.elf

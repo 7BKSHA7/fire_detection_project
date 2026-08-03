@@ -115,26 +115,26 @@ void LCD_INIT(u8 ModeType)
 {
     if(ModeType==Lcd_4bitMode)                      
     {   
-        DIO_set_group_direction(LCD_DataGroup , 0xF0);  //here i will use D4:D7     
-        DIO_set_pin_direction(LCD_RSGroup , LCD_RSPin , output);
-        DIO_set_pin_direction(LCD_EGroup  , LCD_EPin  , output);  
+        DIO_set_group_direction(LCD_DataGroup , LCD_datapins);  //here i will use D4:D7     
+        DIO_set_pin_direction(LCD_RSGroup , LCD_RSPin , output);  // resgister select pin
+        DIO_set_pin_direction(LCD_EGroup  , LCD_EPin  , output);  // enable pin
         _delay_ms(35);
         /*HERE CODE TO MAKE LCD 4 BITS____becouse its automatically work with 8 bit mode*/
-        LCD_WriteCommand(LCD_RETURN_HOME , Lcd_4bitMode);
+        LCD_WriteCommand(LCD_RETURN_HOME , Lcd_4bitMode); // returen to first postion
         _delay_ms(2);
-        LCD_WriteCommand(LCD_MODETYBE_4BIT , Lcd_4bitMode);
+        LCD_WriteCommand(LCD_MODETYBE_4BIT , Lcd_4bitMode); // 4bit mode
         _delay_ms(1);
-        LCD_WriteCommand(LCD_DISPLAY_ON , Lcd_4bitMode);
+        LCD_WriteCommand(LCD_DISPLAY_ON , Lcd_4bitMode); // display on cursor off
         _delay_ms(1);
-        LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode);
+        LCD_WriteCommand(LCD_CLEAR_DISPLAY , Lcd_4bitMode); // clear display 
         _delay_ms(2);
-        LCD_WriteCommand(LCD_ENTRY_MODE , Lcd_4bitMode);
+        LCD_WriteCommand(LCD_ENTRY_MODE , Lcd_4bitMode); // set cursor move to right
         _delay_ms(1);
 
     } 
     else if(ModeType==Lcd_8bitMode)
     {
-        DIO_set_group_direction(LCD_DataGroup , 0xFF); //ALL OUTPUT CUZ I WILL USE ALL BITS IN PINS
+        DIO_set_group_direction(LCD_DataGroup , LCD_datapins_all); //ALL OUTPUT CUZ I WILL USE ALL BITS IN PINS
         DIO_set_pin_direction(LCD_RSGroup , LCD_RSPin , output);
         DIO_set_pin_direction(LCD_EGroup , LCD_EPin , output);
         _delay_ms(35);

@@ -22,9 +22,8 @@
 void BUTTON_init(void)
 {
     DIO_set_pin_direction(BUTTON_PORT, BUTTON_PIN, input);
-    DIO_set_pin_value(BUTTON_PORT, BUTTON_PIN, high); 
+    DIO_set_pin_value(BUTTON_PORT, BUTTON_PIN, high); // Enable internal pull-up resistor
 }
-
 
 u8 BUTTON_GetState(void)
 {
