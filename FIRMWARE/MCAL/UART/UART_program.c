@@ -1,6 +1,6 @@
 /**
  * @file      UART_program.c
- * @author    Beshoy
+ * @author    Moaaz
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Implementation of the UART (Universal Asynchronous Receiver-Transmitter) Driver.
  * @details   This file contains the implementation of UART initialization, 
