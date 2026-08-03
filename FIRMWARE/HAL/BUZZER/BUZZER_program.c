@@ -1,13 +1,14 @@
 /**
-* @file    Buzzer_Program.c
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Buzzer_Program.c
+ * @author    Youssef
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the Buzzer Driver.
+ * @details   This file contains the initialization function for the buzzer and 
+ *            functions to control its state (Turn On, Turn Off, and Toggle).
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "../../LIB/STD_TYPES.h"
 #include "../../LIB/BIT_MATH.h"
