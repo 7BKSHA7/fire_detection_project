@@ -1,13 +1,15 @@
 /**
-* @file    Recovery_Program.c
-* @author beshoy
-* @author beshoy
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Recovery_Program.c
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Implementation of the Recovery subsystem.
+ * @details   This file contains the logic for system recovery after an emergency 
+ *            or fire alarm state. It prompts the user to acknowledge the emergency 
+ *            and restores the normal monitoring UI upon recovery.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "Recovery_Interface.h"
 
