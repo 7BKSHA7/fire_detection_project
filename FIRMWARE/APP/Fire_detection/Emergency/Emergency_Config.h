@@ -1,6 +1,6 @@
 /**
  * @file      Emergency_Config.h
- * @author    Beshoy
+ * @author    Ali
  * @author    Hesham Ahmed (Reviewer)
  * @brief     Configuration file for the Emergency Fire State.
  * @details   This file contains user-configurable parameters and thresholds 
