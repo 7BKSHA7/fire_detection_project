@@ -1,13 +1,14 @@
 /**
-* @file    Warning_Private.h
-* @author (developer)  
-* @author (reviewer)
-* @brief  
-* @details
-* @version
-* @date
-* @copyright Copyright (c) 2026, Gestell Company
-*/
+ * @file      Warning_Private.h
+ * @author    Beshoy
+ * @author    Hesham Ahmed (Reviewer)
+ * @brief     Private definitions for the Warning Fire State.
+ * @details   This file is reserved for internal macros, private constants, 
+ *            and internal states specific to the Warning state logic.
+ * @version   1.0.0
+ * @date      3 August 2026
+ * @copyright Copyright (c) 2026, Gestell Company
+ */
 
 #include "../../../Lib/STD_TYPES.h"
 #ifndef WARNING_PRIVATE_H_
