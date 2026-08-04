@@ -7,9 +7,7 @@
 *A layered-architecture embedded system that continuously monitors temperature and smoke levels, classifies hazard severity, and triggers alarms automatically.*
 
 [![Platform](https://img.shields.io/badge/Platform-ATmega32-orange?style=flat-square)]()
-[![Language](https://img.shields.io/badge/Language-Embedded%20C-blue?style=flat-square)]()
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)]()
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)]()
+[![Language](https://img.shields.io/badge/Language-Embedded%20C-blue?style=flat-square)
 
 </div>
 
