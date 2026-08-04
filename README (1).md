@@ -19,12 +19,12 @@
 
 | Role | Name |
 |---|---|
-| 🧑‍💼 Team Leader | **Eng. Hesham Ahmed** |
-| 👨‍💻 Member | Beshoy Esmat |
-| 👨‍💻 Member | Yousef Medhat |
-| 👨‍💻 Member | Ali Mohamed |
-| 👨‍💻 Member | Rohayem Moataz |
-| 👨‍💻 Member | Moaz Ahmed |
+|  Team Leader | **Eng. Hesham Ahmed** |
+|  Member | Beshoy Esmat |
+|  Member | Yousef Medhat |
+|  Member | Ali Mohamed |
+|  Member | Rohayem Moataz |
+|  Member | Moaz Ahmed |
 
 ---
 
@@ -109,13 +109,13 @@ Fire_Detection_System/
 
 | Tool | Purpose |
 |---|---|
-| 🖊️ VS Code | Writing and editing the code |
-| 🌿 Git / GitHub | Version control and collaboration |
-| 💬 Discord | Team communication |
-| 📋 Trello | Task tracking (to-do / doing / done) |
-| ⚡ Proteus | Full hardware circuit simulation |
-| 🔬 SimulIDE | Quick component-level testing |
-| 🧰 Embedded Builder | Building the project & catching bugs |
+|  VS Code | Writing and editing the code |
+|  Git / GitHub | Version control and collaboration |
+|  Discord | Team communication |
+|  Trello | Task tracking (to-do / doing / done) |
+|  Proteus | Full hardware circuit simulation |
+|  SimulIDE | Quick component-level testing |
+|  Embedded Builder | Building the project & catching bugs |
 
 ---
 
